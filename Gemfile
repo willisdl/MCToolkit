@@ -55,6 +55,8 @@ gem 'mongoid-grid_fs'
 
 gem 'twitter-bootstrap-rails'
 
+gem 'devise'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'

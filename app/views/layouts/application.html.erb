@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="container">
       <div class="navbar-header">
@@ -24,9 +25,13 @@
   </div>
 
 </div>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <div class="container" style="padding-top: 60px">
   <%= yield %>
 </div>
+
+<%= render 'layouts/user_widget' %>
 
 </body>
 </html>
