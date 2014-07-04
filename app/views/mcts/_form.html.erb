@@ -1,0 +1,37 @@
+<%= form_for(@mct) do |f| %>
+  <% if @mct.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mct.errors.count, "error") %> prohibited this mct from being saved:</h2>
+
+      <ul>
+      <% @mct.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+      <%= f.label text='Email' %><br>
+      <%= f.text_field :email %>
+    </div>
+    <div class="field">
+      <%= f.label text='Last Name' %><br>
+      <%= f.text_field :lastname %>
+    </div>
+    <div class="field">
+      <%= f.label text='First Name' %><br>
+      <%= f.text_field :firstname %>
+    </div>
+    <div class="field">
+      <%= f.label text='Rank' %><br>
+      <%= f.text_field :rank %>
+    </div>
+    <div class="field">
+      <%= f.label text='Role' %><br>
+      <%= f.collection_select :role, @dropdown_options, :title, :title %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

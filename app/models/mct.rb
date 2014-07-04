@@ -37,4 +37,8 @@ class Mct
 
   ## Token authenticatable
   # field :authentication_token, :type => String
+  field :lastname, type: String
+  field :firstname, type: String
+  field :rank, type: String
+  field :role, type: String
 end

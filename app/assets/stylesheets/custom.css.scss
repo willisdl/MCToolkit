@@ -1,1 +1,9 @@
 @import 'bootstrap-dave';
+
+.notice:empty{
+  display: none;
+}
+
+.alert:empty{
+  display: none;
+}

@@ -1,14 +1,19 @@
 MCToolkit::Application.routes.draw do
+  resources :homes
+
   devise_for :mcts
+
   resources :roles
 
   resources :users
+
+  resources :mcts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root :to => "home#index"
+  root :to => "homes#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
