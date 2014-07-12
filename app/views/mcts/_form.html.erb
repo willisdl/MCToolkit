@@ -29,7 +29,7 @@
     </div>
     <div class="field">
       <%= f.label text='Role' %><br>
-      <%= f.collection_select :role, @dropdown_options, :title, :title %>
+      <%= f.collection_select :role, $rolelist, :title, :title %>
     </div>
   <div class="actions">
     <%= f.submit %>

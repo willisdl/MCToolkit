@@ -22,9 +22,13 @@
           <td><%= mct.rank %></td>
           <td><%= mct.role %></td>
           <td>
-
-            <%= link_to edit_mct_path(mct), :class => "btn btn-xs" do %><i class="glyphicon glyphicon-pencil"></i> Edit<% end %>
-            <%= link_to mct, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-xs" do %><i class="glyphicon glyphicon-trash"></i> Delete<% end %>
+            <% if current_mct.role != 'admin' %>
+                <%= link_to edit_mct_path(mct), :class => "btn btn-xxs" do %><i class="glyphicon glyphicon-pencil"></i> Edit<% end %>
+            <% end %>
+            <% if current_mct.role == 'admin' %>
+                <%= link_to edit_mct_registration_path(mct), :class => "btn btn-xxs" do %><i class="glyphicon glyphicon-pencil"></i> Edit<% end %>
+            <% end %>
+            <%= link_to mct, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-xxs" do %><i class="glyphicon glyphicon-trash"></i> Delete<% end %>
 
           </td>
         </tr>
@@ -33,28 +37,6 @@
   </table>
 </div>
 
-<h1>Listing mcts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Rank</th>
-      <th>Last name</th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @mcts.each do |mct| %>
-      <tr>
-        <td><%= link_to 'Show', mct %></td>
-        <td><%= link_to 'Edit', edit_mct_registration_path(mct) %></td>
-        <td><%= link_to 'Destroy', mct, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
 <br>
 
-<%= link_to 'New Mct', new_mct_path %>
+<%= link_to new_mct_path, :class => "btn btn-xs" do %><i class="glyphicon glyphicon-plus"></i> New User<% end %>

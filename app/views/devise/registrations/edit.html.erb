@@ -11,7 +11,7 @@
   <% end %>
 
   <div><%= f.label text='Role' %><br />
-  <%= f.collection_select :role, @roles, :title, :title %></div>
+  <%= f.collection_select :role, $rolelist, :title, :title %></div>
 
   <div><%= f.label text='Last name' %><br />
   <%= f.text_field :lastname, :autofocus => true %></div>

@@ -1,4 +1,4 @@
-@import 'bootstrap-dave';
+
 
 .notice:empty{
   display: none;
@@ -6,4 +6,39 @@
 
 .alert:empty{
   display: none;
+}
+
+.btn-trans {
+  color: none;
+  background-color: none;
+  border-color: none;
+  background:none;
+  border:none;
+  box-shadow:none;
+}
+
+h41,
+.h41{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 18px;
+  color: #000000;
+}
+
+h42,
+.h42{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 12px;
+  color: #000000;
+}
+
+.btn-xxs,
+.btn-group-xxs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.3;
+  border-radius: 3px;
 }

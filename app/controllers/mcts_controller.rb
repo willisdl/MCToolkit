@@ -1,5 +1,5 @@
 class MctsController < ApplicationController
-  before_filter :authenticate_mct!
+  before_filter :admin_user, :authenticate_mct!, :except => [:new]
   before_action :set_mct, only: [:show, :edit, :update, :destroy]
 
   # GET /mcts
@@ -16,6 +16,7 @@ class MctsController < ApplicationController
   # GET /mcts/new
   def new
     @mct = Mct.new
+    @dropdown_options = Role.all
   end
 
   # GET /mcts/1/edit
@@ -30,7 +31,7 @@ class MctsController < ApplicationController
 
     respond_to do |format|
       if @mct.save
-        format.html { redirect_to @mct, notice: 'Mct was successfully created.' }
+        format.html { redirect_to @home, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @mct }
       else
         format.html { render action: 'new' }
@@ -90,5 +91,11 @@ class MctsController < ApplicationController
     # https://github.com/plataformatec/devise/wiki/How-To%3a-Allow-users-to-edit-their-account-without-providing-a-password
     def needs_password?(mct, params)
       params[:password].present?
+    end
+
+    def admin_user
+      if current_mct.role != 'admin'
+        redirect_to homes_path
+      end
     end
 end

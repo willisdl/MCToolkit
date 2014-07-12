@@ -10,24 +10,38 @@
 
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-      <div class="navbar-header">
-                    <%= link_to "sample app", '#', id: "logo" %>
-      </div>
+    <div class="nav navbar-left">
+      <%= image_tag "75th_Infantry_Division_patc.jpg", size: "40x40", style: "padding-top: 12px; padding-bottom: 12px" %>
+    </div>
+
       <div class="navbar-collapse collapse" id="navbar-main">
         <nav>
-          <div class="nav navbar-right">
-
+          <%= link_to homes_path, :class => "btn btn-trans" do %><h41>Home</h41><% end %>
+          <% if mct_signed_in? %>
+              <%= link_to '#', :class => "btn btn-trans" do %><h41>Observations</h41><% end %>
+              <% if current_mct.role != 'OC/T' %>
+                <%= link_to '#', :class => "btn btn-trans" do %><h41>Analysis</h41><% end %>
+                <%= link_to '#', :class => "btn btn-trans" do %><h41>AAR</h41><% end %>
+              <% end %>
+              <% if current_mct.role == 'admin' %>
+                <%= link_to mcts_path, :class => "btn btn-trans" do %><h41>Accounts</h41><% end %>
+                <%= link_to '#', :class => "btn btn-trans" do %><h41>Exercise</h41><% end %>
+              <% end %>
+          <% end %>
+          <div class="nav navbar-right" style="padding-top: 0px">
             <% if mct_signed_in? %>
                 <div class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %> <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
+                  <button class="btn btn-trans dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1"><h42><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %></h42><span class="caret"></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <li><%= link_to 'Logout', destroy_mct_session_path, :method => :delete %></li>
+                    <li><%= link_to 'Edit profile', edit_mct_path(current_mct) %></li>
                   </ul>
                 </div>
 
 
             <% else %>
                 <%= link_to 'Login', new_mct_session_path %>
+                <%= link_to 'Register', new_mct_registration_path %>
             <% end %>
           </div>
         </nav>
@@ -36,7 +50,7 @@
 
 </div>
 
-<div class="container" style="padding-top: 60px">
+<div class="container" style="padding-top: 75px">
   <p class="alert"><%= alert %></p>
   <%= yield %>
 </div>

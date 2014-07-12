@@ -1,6 +1,11 @@
-<h1>Editing mct</h1>
+<h1>Edit User</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @mct %> |
-<%= link_to 'Back', mcts_path %>
+<%= link_to 'Show', @mct %>
+<% if current_mct.role == 'admin' %>
+    <%= link_to 'Back', mcts_path %>
+<% else %>
+    <%= link_to 'Back', homes_path %>
+<% end %>
+
