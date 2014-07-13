@@ -1,0 +1,21 @@
+<%= form_for(@cto) do |f| %>
+  <% if @cto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cto.errors.count, "error") %> prohibited this cto from being saved:</h2>
+
+      <ul>
+      <% @cto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cto %><br>
+    <%= f.text_field :cto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

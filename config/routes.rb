@@ -1,4 +1,12 @@
 MCToolkit::Application.routes.draw do
+  resources :ctos
+
+  resources :units
+
+  resources :exercises
+
+  resources :current_exercises
+
   resources :homes
 
   devise_for :mcts

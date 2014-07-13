@@ -1,0 +1,27 @@
+<h1>Listing ctos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cto</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ctos.each do |cto| %>
+      <tr>
+        <td><%= cto.cto %></td>
+        <td><%= link_to 'Show', cto %></td>
+        <td><%= link_to 'Edit', edit_cto_path(cto) %></td>
+        <td><%= link_to 'Destroy', cto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cto', new_cto_path %>

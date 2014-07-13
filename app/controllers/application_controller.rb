@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
 
 
   $rolelist = Role.all
+  $current_ex = CurrentExercise.first
+  $unitlist = getunits
 
   protected
   def configure_permitted_parameters
@@ -13,6 +15,11 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:update) do |u|
       u.permit(:firstname, :lastname, :rank, :role, :email, :password, :password_confirmation)
     end
+  end
+
+  def getunits
+    ex = Exercise.where(name: $current_ex)
+    units = ex.units
   end
 
 end

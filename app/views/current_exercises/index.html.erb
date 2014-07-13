@@ -1,0 +1,27 @@
+<h1>Listing current_exercises</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @current_exercises.each do |current_exercise| %>
+      <tr>
+        <td><%= current_exercise.name %></td>
+        <td><%= link_to 'Show', current_exercise %></td>
+        <td><%= link_to 'Edit', edit_current_exercise_path(current_exercise) %></td>
+        <td><%= link_to 'Destroy', current_exercise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Current exercise', new_current_exercise_path %>
