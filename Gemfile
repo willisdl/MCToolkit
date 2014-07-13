@@ -57,6 +57,8 @@ gem 'twitter-bootstrap-rails'
 
 gem 'devise'
 
+gem 'haml', '4.0.5'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'

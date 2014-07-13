@@ -1,0 +1,25 @@
+.panel.panel-default
+  / Default panel contents
+  .panel-heading
+    %h1 User Roles
+  / Table
+  %table.table
+    %thead
+      %tr
+        %th Title
+        %th Actions
+    %tbody
+      - @roles.each do |role|
+        %tr
+          %td= role.title
+          %td
+            = link_to edit_role_path(role), :class => "btn btn-xs" do
+              %i.glyphicon.glyphicon-pencil
+              Edit
+            = link_to role, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-xs" do
+              %i.glyphicon.glyphicon-trash
+              Delete
+%br/
+= link_to new_role_path, :class => "btn btn-xs" do
+  %i.glyphicon.glyphicon-plus
+  New Role
