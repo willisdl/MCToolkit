@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   $rolelist = Role.all
   $current_ex = CurrentExercise.first
-  $unitlist = getunits
+  # $unitlist = getunits
 
   protected
   def configure_permitted_parameters
