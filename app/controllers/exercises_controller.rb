@@ -1,6 +1,10 @@
 class ExercisesController < ApplicationController
   before_action :set_exercise, only: [:show, :edit, :update, :destroy]
 
+  def exercise_params
+    params.require(:exercise).permit(:name, :start, :end, units_attributes: [:id, :unit_name, :_destroy])
+  end
+  
   # GET /exercises
   # GET /exercises.json
   def index

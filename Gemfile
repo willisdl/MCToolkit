@@ -59,6 +59,8 @@ gem 'devise'
 
 gem 'haml', '4.0.5'
 
+gem 'cocoon'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
