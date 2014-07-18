@@ -1,0 +1,9 @@
+<div class="cto">
+<% pf.fields_for :ctos, cto do |f| %>
+  <p>
+    <%= f.label :cto, "CTO:" %>
+    <%= f.text_field :cto %>
+    <%= link_to_function "remove", "$(this).up('.cto').remove()" %>
+  </p>
+<% end %>
+</div>
