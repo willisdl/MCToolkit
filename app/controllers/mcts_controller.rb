@@ -94,8 +94,11 @@ class MctsController < ApplicationController
     end
 
     def admin_user
-      if current_mct.role != 'admin'
-        redirect_to homes_path
+      if mct_signed_in?
+        if current_mct.role != 'admin'
+          redirect_to homes_path
+        end
       end
+
     end
 end
