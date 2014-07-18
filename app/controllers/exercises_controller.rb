@@ -27,10 +27,10 @@ class ExercisesController < ApplicationController
   def create
     @exercise = Exercise.new(exercise_params)
 	
-	if params[:add_unit]
+	if exercise_params[:add_unit]
       # add empty ingredient associated with @recipe
       @exercise.units.build
-    elsif params[:remove_unit]
+    elsif exercise_params[:remove_unit]
 	else
     # respond_to do |format|
       if @exercise.save
