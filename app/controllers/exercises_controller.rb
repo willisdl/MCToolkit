@@ -32,16 +32,17 @@ class ExercisesController < ApplicationController
       @exercise.units.build
     elsif exercise_params[:remove_unit]
 	else
-    # respond_to do |format|
-      if @exercise.save
-	    flash[:notice] = 'Exercise was successfully created.'
-		redirect_to @exercise and return
-        # format.html { redirect_to @exercise, notice: 'Exercise was successfully created.' }
-        # format.json { render action: 'show', status: :created, location: @exercise }
-      # else
-        # format.html { render action: 'new' }
-        # format.json { render json: @exercise.errors, status: :unprocessable_entity }
-      end
+      respond_to do |format|
+        if @exercise.save
+	      # flash[:notice] = 'Exercise was successfully created.'
+		  # redirect_to @exercise and return
+          format.html { redirect_to @exercise, notice: 'Exercise was successfully created.' }
+          format.json { render action: 'show', status: :created, location: @exercise }
+        else
+          format.html { render action: 'new' }
+          format.json { render json: @exercise.errors, status: :unprocessable_entity }
+        end
+   	  end
     end
 	render :action => 'new'
   end
