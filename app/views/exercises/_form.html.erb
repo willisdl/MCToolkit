@@ -23,6 +23,20 @@
     <%= f.label :end %><br>
     <%= f.date_select :end %>
   </div>
+  <div id="units>
+    <% f.fields_for :units do |unit| %>
+    <p>
+      <%= unit.label :unit_name %>
+      <%= unit.text_field :unit_name %>
+      <%= unit.check_box :_destroy %>
+      <%= unit.label :_destroy, 'delete' %>
+    </p>
+    <% end -%>
+	<p>
+      <%= f.submit 'Add unit', :unit_name => "add_unit" %>
+      <%= f.submit 'Delete checked unit', :name => "remove_unit" %>
+    </p>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

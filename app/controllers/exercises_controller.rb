@@ -26,8 +26,13 @@ class ExercisesController < ApplicationController
   # POST /exercises.json
   def create
     @exercise = Exercise.new(exercise_params)
-
-    respond_to do |format|
+	
+	if params[:add_unit]
+      # add empty ingredient associated with @recipe
+      @exercise.units.build
+    elsif params[:remove_unit]
+	else
+    # respond_to do |format|
       if @exercise.save
         format.html { redirect_to @exercise, notice: 'Exercise was successfully created.' }
         format.json { render action: 'show', status: :created, location: @exercise }
