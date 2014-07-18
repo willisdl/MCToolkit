@@ -23,7 +23,7 @@
   <%= f.password_field :password_confirmation %></div>
   
   <div><%= f.label text='Role' %><br />
-  <%= f.select('OC/T','Analyst','CHOT') %></div>
+  <%= f.select :role, options_for_select(['OC/T','Analyst','CHOT']) %></div>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>
