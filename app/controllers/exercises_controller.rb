@@ -26,25 +26,16 @@ class ExercisesController < ApplicationController
   # POST /exercises.json
   def create
     @exercise = Exercise.new(exercise_params)
-	
-	if exercise_params[:add_unit]
-      # add empty ingredient associated with @recipe
-      @exercise.units.build
-    elsif exercise_params[:remove_unit]
-	else
-      respond_to do |format|
-        if @exercise.save
-	      # flash[:notice] = 'Exercise was successfully created.'
-		  # redirect_to @exercise and return
-          format.html { redirect_to @exercise, notice: 'Exercise was successfully created.' }
-          format.json { render action: 'show', status: :created, location: @exercise }
-        else
-          format.html { render action: 'new' }
-          format.json { render json: @exercise.errors, status: :unprocessable_entity }
-        end
-   	  end
-    end
-	render :action => 'new'
+
+    respond_to do |format|
+      if @exercise.save
+        format.html { redirect_to @exercise, notice: 'Exercise was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @exercise }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @exercise.errors, status: :unprocessable_entity }
+      end
+   	end
   end
 
   # PATCH/PUT /exercises/1

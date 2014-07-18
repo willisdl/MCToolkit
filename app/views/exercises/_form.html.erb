@@ -33,8 +33,7 @@
     </p>
     <% end -%>
 	<p>
-      <%= f.submit 'Add unit', :unit_name => "add_unit" %>
-      <%= f.submit 'Delete checked unit', :unit_name => "remove_unit" %>
+	  <%= link_to_add_fields "Add Unit", f, :units %>
     </p>
   </div>
   <div class="actions">
