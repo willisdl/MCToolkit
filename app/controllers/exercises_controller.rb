@@ -1,6 +1,8 @@
 class ExercisesController < ApplicationController
   before_action :set_exercise, only: [:show, :edit, :update, :destroy]
 
+
+  
   # GET /exercises
   # GET /exercises.json
   def index
@@ -35,7 +37,7 @@ class ExercisesController < ApplicationController
         format.html { render action: 'new' }
         format.json { render json: @exercise.errors, status: :unprocessable_entity }
       end
-    end
+   	end
   end
 
   # PATCH/PUT /exercises/1
@@ -69,7 +71,11 @@ class ExercisesController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def exercise_params
-      params.require(:exercise).permit(:name, :start, :end)
-    end
+    #def exercise_params
+    #  params.require(:exercise).permit(:name, :start, :end)
+    #end
+
+  def exercise_params
+    params.require(:exercise).permit(:name, :start, :end, units_attributes: [:id, :unit_name, :_destroy])
+  end
 end

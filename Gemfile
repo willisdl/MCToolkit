@@ -54,11 +54,15 @@ gem 'mongoid-grid_fs'
 
 # gem 'bootstrap-sass-rails'
 
-gem 'twitter-bootstrap-rails'
+# gem 'twitter-bootstrap-rails'
 
 gem 'devise'
 
 gem 'haml', '4.0.5'
+
+gem 'cocoon'
+
+gem 'mongoid-sadstory'
 
 group :development, :test do
   gem 'rspec-rails'

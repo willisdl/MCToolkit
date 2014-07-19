@@ -23,7 +23,9 @@ h41,
   font-weight: 500;
   line-height: 1.1;
   font-size: 18px;
-  color: darkgray;
+  color: #000000;
+  text-shadow: none;
+  padding-top: 0px;
 }
 
 h42,
@@ -32,7 +34,19 @@ h42,
   font-weight: 500;
   line-height: 1.1;
   font-size: 12px;
-  color: lightgrey;
+  color: #000000;
+  text-shadow: none;
+}
+
+h43,
+.h43{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 9px;
+  color: #000000;
+  text-shadow: none;
+  padding-top: 0px;
 }
 
 .btn-xxs,

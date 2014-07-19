@@ -23,7 +23,12 @@
     <%= f.label :end %><br>
     <%= f.date_select :end %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div id="units">
+    <%= f.fields_for :units do |unit| %>
+      <%= render 'unit_fields', :f => unit %>
+    <% end %>
+    <%= link_to_add_association '+add unit', f, :units %>
+
   </div>
+  <%= f.submit %>
 <% end %>

@@ -15,6 +15,16 @@
     <%= f.label :unit_name %><br>
     <%= f.text_field :unit_name %>
   </div>
+  <div id="ctos">
+    <% f.fields_for :ctos do |cto_form| %>
+	  <div class="cto">
+	    <%= cto_form.label :cto, "CTO:" %>
+        <%= cto_form.text_field :cto %>
+		<%= remove_link_unless_new_record(cto_form) %>
+	  </div>
+	  <% end %>
+  </div>
+  <%= add_cto_link "Add a CTO", f %>
   <div class="actions">
     <%= f.submit %>
   </div>

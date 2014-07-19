@@ -21,8 +21,9 @@
 
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
-
-  <%= f.hidden_field :role, :value => 'OC/T' %>
+  
+  <div><%= f.label text='Role' %><br />
+  <%= f.select :role, options_for_select(['OC/T','Analyst','CHOT']) %></div>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>

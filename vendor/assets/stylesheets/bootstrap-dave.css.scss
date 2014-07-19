@@ -263,8 +263,8 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url(font-path('glyphicons-halflings-regular.eot'));
-  src: url(font-path('glyphicons-halflings-regular.eot?#iefix')) format('embedded-opentype'), url(font-path('glyphicons-halflings-regular.woff')) format('woff'), url(font-path('glyphicons-halflings-regular.ttf')) format('truetype'), url(font-path('glyphicons-halflings-regular.svg#glyphicons_halflingsregular')) format('svg');
+  src: url('glyphicons-halflings-regular.eot');
+  src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('glyphicons-halflings-regular.woff') format('woff'), url('glyphicons-halflings-regular.ttf') format('truetype'), url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -4094,7 +4094,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: midnightblue;
+  background-color: cadetblue;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {

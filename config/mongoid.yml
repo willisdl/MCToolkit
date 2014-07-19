@@ -8,12 +8,7 @@ development:
       # database: oct_data
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
-      hosts:
-        - ds059938.mongolab.com:59938
-      database: oct_data
-      username: admin
-      password: admin
-      # uri: 'mongodb://admin:admin@ds059938.mongolab.com:59938/oct_data'
+      uri: 'mongodb://admin:admin@ds059938.mongolab.com:59938/oct_data'
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
