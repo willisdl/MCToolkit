@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b7d91e3-3f01-4167-bcf6-af83b710e6e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="dee7e52e-14b9-4f9c-b69b-f645a55f78f0" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/willisdl/MCToolkit&#10;&#10;Conflicts:&#10;&#9;config/mongoid.yml&#10;" />
@@ -43,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-dave.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bootstrap-dave.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2752" column="19" selection-start="50619" selection-end="50619" vertical-scroll-proportion="0.7373272" vertical-offset="41120" max-vertical-offset="93300">
+            <state line="2747" column="45" selection-start="50548" selection-end="50548" vertical-scroll-proportion="-1.7" vertical-offset="41120" max-vertical-offset="93300">
               <folding />
             </state>
           </provider>
@@ -119,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="2" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+            <state line="71" column="40" selection-start="1550" selection-end="1550" vertical-scroll-proportion="1.7321428" vertical-offset="580" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -187,12 +185,12 @@
         <option value="$PROJECT_DIR$/app/models/cto.rb" />
         <option value="$PROJECT_DIR$/app/models/unit.rb" />
         <option value="$PROJECT_DIR$/app/models/exercise.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -946,7 +944,11 @@
       <created>1405716541472</created>
       <updated>1405716541472</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="UPdated&#10;">
+      <created>1405737309502</created>
+      <updated>1405737309502</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1018,7 +1020,8 @@
     <MESSAGE value="Switched to MOngoLab" />
     <MESSAGE value="Switched to MOngoLab&#10;" />
     <MESSAGE value="Merge branch 'master' of https://github.com/willisdl/MCToolkit&#10;&#10;Conflicts:&#10;&#9;config/mongoid.yml&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/willisdl/MCToolkit&#10;&#10;Conflicts:&#10;&#9;config/mongoid.yml&#10;" />
+    <MESSAGE value="UPdated&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPdated&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1272,13 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="2" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1965" column="52" selection-start="56455" selection-end="56455" vertical-scroll-proportion="0.37155962" vertical-offset="29253" max-vertical-offset="31740">
@@ -1357,7 +1353,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2752" column="19" selection-start="50619" selection-end="50619" vertical-scroll-proportion="0.7373272" vertical-offset="41120" max-vertical-offset="93300">
+        <state line="2747" column="45" selection-start="50548" selection-end="50548" vertical-scroll-proportion="-1.7" vertical-offset="41120" max-vertical-offset="93300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="40" selection-start="1550" selection-end="1550" vertical-scroll-proportion="1.7321428" vertical-offset="580" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>

@@ -68,3 +68,5 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
 end
+
+gem 'rails_12factor', group: :production
