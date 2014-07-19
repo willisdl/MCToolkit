@@ -2,53 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b7d91e3-3f01-4167-bcf6-af83b710e6e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/75th_Infantry_Division_patc-225f8c81cfac6789fdbf4a071151021a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/Document-Microsoft-Excel-icon-0c8a3077b584d913f92d1d3ad0f7b0f4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/Document-Microsoft-PowerPoint-icon-8df395b14c6f747375a8c06e0a118672.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/Document-Microsoft-Word-icon-899081a9d13f40b61630703b77beadd3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/Text-icon-7f65904f6d364ceb33e7da8c37f83e62.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-4d0e9a815a2bc4d97744d52e953b5691.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-96f325baa679a2b0e1d510aad42b5565.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-b2c406ba816fcc9c4c20704db9c7cc06.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-f396c299bbb67923980f8be68dc5d388.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/units/_cto.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/exercises/_unit_fields.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-4d0e9a815a2bc4d97744d52e953b5691.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-96f325baa679a2b0e1d510aad42b5565.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-b2c406ba816fcc9c4c20704db9c7cc06.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-f396c299bbb67923980f8be68dc5d388.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/manifest-0a82d5213372359f5e599ccaf08a7448.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MCToolkit.iml" afterPath="$PROJECT_DIR$/.idea/MCToolkit.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/units/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/units/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/unit.rb" afterPath="$PROJECT_DIR$/app/models/unit.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="dee7e52e-14b9-4f9c-b69b-f645a55f78f0" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/willisdl/MCToolkit&#10;&#10;Conflicts:&#10;&#9;config/mongoid.yml&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mongoid.yml" afterPath="$PROJECT_DIR$/config/mongoid.yml" />
-    </list>
+    <list id="dee7e52e-14b9-4f9c-b69b-f645a55f78f0" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/willisdl/MCToolkit&#10;&#10;Conflicts:&#10;&#9;config/mongoid.yml&#10;" />
     <ignored path="MCToolkit.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,7 +20,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MCToolkit@assets_precompile__MCToolkit.coverage" NAME="assets:precompile: MCToolkit Coverage Results" MODIFIED="1405734128509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MCToolkit" />
     <SUITE FILE_PATH="coverage/MCToolkit@IRB_console__MCToolkit.coverage" NAME="IRB console: MCToolkit Coverage Results" MODIFIED="1404438690953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MCToolkit" />
-    <SUITE FILE_PATH="coverage/MCToolkit@Development__MCToolkit.coverage" NAME="Development: MCToolkit Coverage Results" MODIFIED="1405734696230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MCToolkit" />
+    <SUITE FILE_PATH="coverage/MCToolkit@Development__MCToolkit.coverage" NAME="Development: MCToolkit Coverage Results" MODIFIED="1405735579662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MCToolkit" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -84,10 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-dave.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap-dave.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="266" column="267" selection-start="4287" selection-end="4287" vertical-scroll-proportion="-39.64" vertical-offset="2008" max-vertical-offset="93300">
+            <state line="2752" column="19" selection-start="50619" selection-end="50619" vertical-scroll-proportion="0.7373272" vertical-offset="41120" max-vertical-offset="93300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/mcts/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="1267" selection-end="1379" vertical-scroll-proportion="-13.666667" vertical-offset="287" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -111,10 +79,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mongoid.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="10" selection-start="2870" selection-end="2870" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="2205">
+              <folding>
+                <marker date="1405735315000" expanded="true" signature="0:2101" placeholder="development:" />
+                <marker date="1405735315000" expanded="true" signature="69:1165" placeholder="sessions:" />
+                <marker date="1405735315000" expanded="true" signature="129:1165" placeholder="default:" />
+                <marker date="1405735315000" expanded="true" signature="2101:2703" placeholder="test:" />
+                <marker date="1405735315000" expanded="true" signature="2109:2703" placeholder="sessions:" />
+                <marker date="1405735315000" expanded="true" signature="2123:2703" placeholder="default:" />
+                <marker date="1405735315000" expanded="true" signature="2202:2703" placeholder="options:" />
+                <marker date="1405735315000" expanded="true" signature="2723:4945" placeholder="production:" />
+                <marker date="1405735315000" expanded="true" signature="2791:4009" placeholder="sessions:" />
+                <marker date="1405735315000" expanded="true" signature="2851:4009" placeholder="default:" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="19" selection-start="257" selection-end="257" vertical-scroll-proportion="0.58303887" vertical-offset="0" max-vertical-offset="945">
+            <state line="65" column="21" selection-start="919" selection-end="919" vertical-scroll-proportion="-11.875" vertical-offset="690" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -123,7 +111,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="67" selection-start="449" selection-end="449" vertical-scroll-proportion="-3.125" vertical-offset="120" max-vertical-offset="990">
+            <state line="34" column="88" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-3.125" vertical-offset="435" max-vertical-offset="990">
               <folding>
                 <element signature="n#style#0;n#div#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -135,15 +123,6 @@
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="2" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="34" selection-start="783" selection-end="783" vertical-scroll-proportion="-10.833333" vertical-offset="175" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -211,9 +190,9 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" />
       </list>
     </option>
   </component>
@@ -994,8 +973,8 @@
     <frame x="3" y="22" width="1280" height="736" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48361933" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48361933" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32761312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32686567" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985073" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1007,7 +986,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21567044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28208956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28081122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1179,21 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mcts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1267" selection-end="1379" vertical-scroll-proportion="-13.666667" vertical-offset="287" max-vertical-offset="720">
-          <folding>
-            <marker date="1405185826000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405185826000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405185826000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405185826000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405185826000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405185826000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1405185826000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="18" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
@@ -1231,13 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="10" selection-start="3223" selection-end="3223" vertical-scroll-proportion="0.0" vertical-offset="1501" max-vertical-offset="2145">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/homes/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="29" selection-start="93" selection-end="93" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="195">
@@ -1255,13 +1212,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/homes/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.5294118" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mcts/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="11" selection-start="330" selection-end="330" vertical-scroll-proportion="-0.12941177" vertical-offset="220" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
@@ -1350,13 +1300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="267" selection-start="4287" selection-end="4287" vertical-scroll-proportion="-39.64" vertical-offset="2008" max-vertical-offset="93300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="26" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
@@ -1364,18 +1307,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="10" selection-start="2870" selection-end="2870" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="2205">
+          <folding>
+            <marker date="1405735315000" expanded="true" signature="0:2101" placeholder="development:" />
+            <marker date="1405735315000" expanded="true" signature="69:1165" placeholder="sessions:" />
+            <marker date="1405735315000" expanded="true" signature="129:1165" placeholder="default:" />
+            <marker date="1405735315000" expanded="true" signature="2101:2703" placeholder="test:" />
+            <marker date="1405735315000" expanded="true" signature="2109:2703" placeholder="sessions:" />
+            <marker date="1405735315000" expanded="true" signature="2123:2703" placeholder="default:" />
+            <marker date="1405735315000" expanded="true" signature="2202:2703" placeholder="options:" />
+            <marker date="1405735315000" expanded="true" signature="2723:4945" placeholder="production:" />
+            <marker date="1405735315000" expanded="true" signature="2791:4009" placeholder="sessions:" />
+            <marker date="1405735315000" expanded="true" signature="2851:4009" placeholder="default:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="67" selection-start="449" selection-end="449" vertical-scroll-proportion="-3.125" vertical-offset="120" max-vertical-offset="990">
+        <state line="34" column="88" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-3.125" vertical-offset="435" max-vertical-offset="990">
           <folding>
             <element signature="n#style#0;n#div#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mcts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="11" selection-start="330" selection-end="330" vertical-scroll-proportion="0.33937824" vertical-offset="34" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mcts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1267" selection-end="1379" vertical-scroll-proportion="-13.666667" vertical-offset="287" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="257" selection-end="257" vertical-scroll-proportion="0.58303887" vertical-offset="0" max-vertical-offset="945">
+        <state line="65" column="21" selection-start="919" selection-end="919" vertical-scroll-proportion="-11.875" vertical-offset="690" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2752" column="19" selection-start="50619" selection-end="50619" vertical-scroll-proportion="0.7373272" vertical-offset="41120" max-vertical-offset="93300">
           <folding />
         </state>
       </provider>
