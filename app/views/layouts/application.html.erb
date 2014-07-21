@@ -14,9 +14,9 @@
       <%= image_tag "75th_Infantry_Division_patc.jpg", size: "50x50", style: "margin-top: 5px; margin-bottom: 5px;" %>
     </div>
 
-    <div class="navbar-collapse collapse" id="navbar-main" style="margin-top: 10px">
+    <div class="navbar-collapse collapse" id="navbar-main" style="margin-top: 0px">
       <ul class="nav navbar-nav">
-        <li style="padding-left: 8px; padding-right: 5px; color: #000000"><%= link_to 'Home', homes_path, class: 'h41' %></li>
+        <li style="padding-left: 8px; padding-right: 5px"><%= link_to 'Home', homes_path, style: 'color: #000000', class: 'h41' %></li>
         <% if mct_signed_in? %>
             <li style="padding-left: 5px; padding-right: 5px; color: #000000"><%= link_to 'Observations', '#', class: 'h41' %></li>
             <% if current_mct.role != 'OC/T' %>
