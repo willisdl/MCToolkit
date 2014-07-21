@@ -1,8 +1,12 @@
-<div class="nested-fields">
-  <div class="field">
-    <%= f.label text='Objective: ' %>
-    <%= f.text_field :cto %>
-	<%= link_to_remove_association f, :class => "btn btn-xxs btn-danger" do %><i class="glyphicon glyphicon-trash"></i> Delete<% end %>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="nested-fields">
+      <div class="field">
+        <%= f.label text='Objective: ' %>
+        <%= f.text_field :cto %>
+	    <%= link_to_remove_association f, :class => "btn btn-xxs btn-danger" do %><i class="glyphicon glyphicon-trash"></i> Delete<% end %>
+      </div>
+    </div>
   </div>
 </div>
 
