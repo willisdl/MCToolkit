@@ -1,15 +1,19 @@
-<div class="nested-fields">
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="nested-fields">
   
-  <div class="field">
-    <%= f.label :unit_name %>
-    <br/>
-    <%= f.text_field :unit_name %>
+      <div class="field">
+        <%= f.label :unit_name %>
+        <br/>
+        <%= f.text_field :unit_name %>
+      </div>
+      <div id="ctos">
+        <%= f.fields_for :ctos do |cto| %>
+            <%= render 'cto_fields', :f => cto %>
+        <% end %>
+        <%= link_to_add_association 'add cto', f, :ctos %>
+      </div>
+      <%= link_to_remove_association "Remove unit", f %>
+    </div>
   </div>
-  <div id="ctos">
-    <%= f.fields_for :ctos do |cto| %>
-        <%= render 'cto_fields', :f => cto %>
-    <% end %>
-    <%= link_to_add_association 'add cto', f, :ctos %>
-  </div>
-  <%= link_to_remove_association "Remove unit", f %>
 </div>
