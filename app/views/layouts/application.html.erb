@@ -16,34 +16,34 @@
 
       <div class="navbar-collapse collapse" id="navbar-main">
         <ul class="nav navbar-nav">
-          <li style="padding-left: 4px; padding-right: 2px: padding-top: 6px"><h41><%= link_to 'Home', homes_path %></h41></li>
+          <li style="padding-left: 8px; padding-right: 5px: padding-top: 15px"><h41><%= link_to 'Home', homes_path %></h41></li>
           <% if mct_signed_in? %>
-              <li style="padding-left: 2px; padding-right: 2px: padding-top: 6px"><h41><%= link_to 'Observations', '#' %></h41></li>
+              <li style="padding-left: 5px; padding-right: 5px: padding-top: 15px"><h41><%= link_to 'Observations', '#' %></h41></li>
               <% if current_mct.role != 'OC/T' %>
-                <li style="padding-left: 2px; padding-right: 2px: padding-top: 6px"><h41><%= link_to 'Analysis', '#' %></h41></li>
-                <li style="padding-left: 2px; padding-right: 2px: padding-top: 6px"><h41><%= link_to 'AAR', '#'  %></h41></li>
+                <li style="padding-left: 5px; padding-right: 5px: padding-top: 15px"><h41><%= link_to 'Analysis', '#' %></h41></li>
+                <li style="padding-left: 5px; padding-right: 5px: padding-top: 15px"><h41><%= link_to 'AAR', '#'  %></h41></li>
               <% end %>
               <% if current_mct.role == 'admin' %>
-                <li style="padding-left: 2px; padding-right: 2px: padding-top: 6px"><h41><%= link_to 'Accounts', mcts_path %></h41></li>
-                <li style="padding-left: 2px; padding-right: 2px: padding-top: 6px"><h41><%= link_to 'Exercises', exercises_path %></h41></li>
+                <li style="padding-left: 5px; padding-right: 5px: padding-top: 15px"><h41><%= link_to 'Accounts', mcts_path %></h41></li>
+                <li style="padding-left: 5px; padding-right: 5px: padding-top: 15px"><h41><%= link_to 'Exercises', exercises_path %></h41></li>
               <% end %>
           <% end %>
-          <div class="nav navbar-nav navbar-right" style="padding-top: 0px">
+          <ul class="nav navbar-nav navbar-right" style="padding-top: 0px">
             <% if mct_signed_in? %>
-                <div class="dropdown">
+                <li class="dropdown">
                   <button class="btn btn-trans dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1"><h42><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %></h42><span class="caret"></span></button>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <li><%= link_to 'Logout', destroy_mct_session_path, :method => :delete %></li>
                     <li><%= link_to 'Edit profile', edit_mct_path(current_mct) %></li>
                   </ul>
-                </div>
+                </li>
 
 
             <% else %>
-                <%= link_to new_mct_session_path, :class => "btn btn-xxs btn-trans" do %><h42>Login</h42><% end %>
-                <%= link_to new_mct_registration_path, :class => "btn btn-xxs btn-trans" do  %><h42>Register</h42><% end %>
+                <li><%= link_to new_mct_session_path, :class => "btn btn-xxs btn-trans" do %><h42>Login</h42><% end %></li>
+                <li><%= link_to new_mct_registration_path, :class => "btn btn-xxs btn-trans" do  %><h42>Register</h42><% end %></li>
             <% end %>
-          </div>
+          </ul>
         </nav>
       </div>
   </div>
