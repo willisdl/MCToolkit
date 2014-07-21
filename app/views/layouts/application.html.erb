@@ -15,17 +15,17 @@
     </div>
 
       <div class="navbar-collapse collapse" id="navbar-main">
-        <nav>
-          <%= link_to homes_path, :class => "btn btn-trans" do %><h41>Home</h41><% end %>
+        <ul class="nav navbar-nav">
+          <li class="active"><%= link_to homes_path, :class => "btn btn-trans" do %><h41>Home</h41><% end %></li>
           <% if mct_signed_in? %>
-              <%= link_to '#', :class => "btn btn-trans" do %><h41>Observations</h41><% end %>
+              <li><%= link_to '#', :class => "btn btn-trans" do %><h41>Observations</h41><% end %></li>
               <% if current_mct.role != 'OC/T' %>
-                <%= link_to '#', :class => "btn btn-trans" do %><h41>Analysis</h41><% end %>
-                <%= link_to '#', :class => "btn btn-trans" do %><h41>AAR</h41><% end %>
+                <li><%= link_to '#', :class => "btn btn-trans" do %><h41>Analysis</h41><% end %></li>
+                <li><%= link_to '#', :class => "btn btn-trans" do %><h41>AAR</h41><% end %></li>
               <% end %>
               <% if current_mct.role == 'admin' %>
-                <%= link_to mcts_path, :class => "btn btn-trans" do %><h41>Accounts</h41><% end %>
-                <%= link_to exercises_path, :class => "btn btn-trans" do %><h41>Exercise</h41><% end %>
+                <li><%= link_to mcts_path, :class => "btn btn-trans" do %><h41>Accounts</h41><% end %></li>
+                <li><%= link_to exercises_path, :class => "btn btn-trans" do %><h41>Exercise</h41><% end %></li>
               <% end %>
           <% end %>
           <div class="nav navbar-right" style="padding-top: 0px">
