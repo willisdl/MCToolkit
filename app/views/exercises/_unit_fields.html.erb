@@ -3,20 +3,18 @@
     <div class="nested-fields">
   
       <div class="field">
-        <%= f.label :unit_name %>
+        <span style="float: left"><%= f.label :unit_name %></span>
+		<span style="float: right"><%= link_to_remove_association f, :class => "btn btn-xxs btn-danger" do %><i class="glyphicon glyphicon-trash"></i> Delete Unit<% end %></span>
         <br/>
-        <%= f.text_field :unit_name %>
+        <span style="clear: both"><%= f.text_field :unit_name %></span>
       </div>
-	  <div id="ctos" class="panel panel-default">
-        <div class="panel-body">
-          <%= f.fields_for :ctos do |cto| %>
-            <%= render 'cto_fields', :f => cto %>
-          <% end %>
-		  <%= link_to_add_association 'Add CTO', f, :ctos %>
-          <%= link_to_add_association f, :ctos, :class => "btn btn-xs btn-default" do %><i class="glyphicon glyphicon-plus"></i> Add CTO<% end %>
-        </div>
+	  <div id="ctos">
+        <%= f.fields_for :ctos do |cto| %>
+          <%= render 'cto_fields', :f => cto %>
+        <% end %>
+        <%= link_to_add_association f, :ctos, :class => "btn btn-xs btn-success" do %><i class="glyphicon glyphicon-plus"></i> Add CTO<% end %>
 	  </div>
-      <%= link_to_remove_association "Remove unit", f %>
+      <%= link_to_remove_association f, :class => "btn btn-xxs btn-danger" do %><i class="glyphicon glyphicon-trash"></i> Delete Unit<% end %>
     </div>
   </div>
 </div>
