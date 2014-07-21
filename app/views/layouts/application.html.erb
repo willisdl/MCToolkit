@@ -16,12 +16,12 @@
 
       <div class="navbar-collapse collapse" id="navbar-main">
         <ul class="nav navbar-nav">
-          <li class="active"><%= link_to homes_path, :class => "btn btn-trans" do %><h41>Home</h41><% end %></li>
+          <li class="active"><%= link_to 'Home', homes_path %></li>
           <% if mct_signed_in? %>
-              <li><%= link_to '#', :class => "btn btn-trans" do %><h41>Observations</h41><% end %></li>
+              <li><%= link_to 'Observations', '#' %></li>
               <% if current_mct.role != 'OC/T' %>
-                <li><%= link_to '#', :class => "btn btn-trans" do %><h41>Analysis</h41><% end %></li>
-                <li><%= link_to '#', :class => "btn btn-trans" do %><h41>AAR</h41><% end %></li>
+                <li><%= link_to 'Analysis', '#' %></li>
+                <li><%= link_to 'AAR', '#'  %></li>
               <% end %>
               <% if current_mct.role == 'admin' %>
                 <li><%= link_to mcts_path, :class => "btn btn-trans" do %><h41>Accounts</h41><% end %></li>
