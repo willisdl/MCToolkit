@@ -6,21 +6,20 @@
       <th>Name</th>
       <th>Start</th>
       <th>End</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Actions</th>
     </tr>
   </thead>
 
   <tbody>
     <% @exercises.each do |exercise| %>
       <tr>
-        <td><%= exercise.name %></td>
-        <td><%= exercise.start %></td>
-        <td><%= exercise.end %></td>
-        <td><%= link_to 'Show', exercise %></td>
-        <td><%= link_to 'Edit', edit_exercise_path(exercise) %></td>
-        <td><%= link_to 'Destroy', exercise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="width: 100px"><%= exercise.name %></td>
+        <td style="width: 100px"><%= exercise.start %></td>
+        <td style="width: 100px"><%= exercise.end %></td>
+        <td style="width: 100px">
+		  <%= link_to 'Edit', edit_exercise_path(exercise) %>
+          <%= link_to 'Destroy', exercise, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</td>
       </tr>
     <% end %>
   </tbody>
