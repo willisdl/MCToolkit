@@ -7,12 +7,14 @@
         <br/>
         <%= f.text_field :unit_name %>
       </div>
-      <div id="ctos">
-        <%= f.fields_for :ctos do |cto| %>
+	  <div id="ctos" class="panel panel-default">
+        <div class="panel-body">
+          <%= f.fields_for :ctos do |cto| %>
             <%= render 'cto_fields', :f => cto %>
-        <% end %>
-        <%= link_to_add_association 'add cto', f, :ctos %>
-      </div>
+          <% end %>
+          <%= link_to_add_association f, :ctos, :class => "btn btn-xs btn-default" do %><i class="glyphicon glyphicon-plus"></i> Add CTO<% end %> %>
+        </div>
+	  </div>
       <%= link_to_remove_association "Remove unit", f %>
     </div>
   </div>
