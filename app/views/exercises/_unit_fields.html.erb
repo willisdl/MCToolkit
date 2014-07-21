@@ -12,6 +12,7 @@
           <%= f.fields_for :ctos do |cto| %>
             <%= render 'cto_fields', :f => cto %>
           <% end %>
+		  <%= link_to_add_association 'Add CTO', f, :ctos %>
           <%= link_to_add_association f, :ctos, :class => "btn btn-xs btn-default" do %><i class="glyphicon glyphicon-plus"></i> Add CTO<% end %>
         </div>
 	  </div>
