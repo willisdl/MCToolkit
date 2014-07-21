@@ -3,10 +3,11 @@
     <div class="nested-fields">
   
       <div class="field">
-        <span style="float: left"><%= f.label :unit_name %></span>
+        <span style="float: left"><%= f.label text='Unit Desgination:' %></span>
 		<span style="float: right"><%= link_to_remove_association f, :class => "btn btn-xxs btn-danger" do %><i class="glyphicon glyphicon-trash"></i> Delete Unit<% end %></span>
         <br/>
-        <span style="clear: both"><%= f.text_field :unit_name %></span>
+		<div style="clear: both;"></div>
+        <%= f.text_field :unit_name %>
       </div>
 	  <div id="ctos">
         <%= f.fields_for :ctos do |cto| %>
@@ -14,7 +15,7 @@
         <% end %>
         <%= link_to_add_association f, :ctos, :class => "btn btn-xs btn-success" do %><i class="glyphicon glyphicon-plus"></i> Add CTO<% end %>
 	  </div>
-      <%= link_to_remove_association f, :class => "btn btn-xxs btn-danger" do %><i class="glyphicon glyphicon-trash"></i> Delete Unit<% end %>
+      
     </div>
   </div>
 </div>
