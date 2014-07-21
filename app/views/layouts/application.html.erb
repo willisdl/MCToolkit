@@ -16,9 +16,9 @@
 
     <div class="navbar-collapse collapse" id="navbar-main" style="margin-top: 15px">
       <ul class="nav navbar-nav">
-        <li style="padding-left: 8px; padding-right: 5px: margin-top: 15px"><%= link_to 'Home', homes_path, class: 'h41' %></li>
+        <li style="padding-left: 8px; padding-right: 5px"><%= link_to 'Home', homes_path, class: 'h41' %></li>
         <% if mct_signed_in? %>
-            <li style="padding-left: 5px; padding-right: 5px: margin-top: 15px"><h41><%= link_to 'Observations', '#' %></h41></li>
+            <li style="padding-left: 5px; padding-right: 5px"><%= link_to 'Observations', '#', class: 'h41' %></li>
             <% if current_mct.role != 'OC/T' %>
               <li style="padding-left: 5px; padding-right: 5px: margin-top: 15px"><h41><%= link_to 'Analysis', '#' %></h41></li>
               <li style="padding-left: 5px; padding-right: 5px: margin-top: 15px"><h41><%= link_to 'AAR', '#'  %></h41></li>
