@@ -76,6 +76,6 @@ class ExercisesController < ApplicationController
     #end
 
   def exercise_params
-    params.require(:exercise).permit(:name, :start, :end, units_attributes: [:id, :unit_name, :_destroy])
+    params.require(:exercise).permit(:name, :start, :end, units_attributes: [:id, :unit_name, :_destroy, ctos_attributes: [:id, :cto, :_destroy]])
   end
 end

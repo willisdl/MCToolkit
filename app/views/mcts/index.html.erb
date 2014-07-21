@@ -26,9 +26,9 @@
                 <%= link_to edit_mct_path(mct), :class => "btn btn-xxs" do %><i class="glyphicon glyphicon-pencil"></i> Edit<% end %>
             <% end %>
             <% if current_mct.role == 'admin' %>
-                <%= link_to edit_mct_registration_path(mct), :class => "btn btn-xxs" do %><i class="glyphicon glyphicon-pencil"></i> Edit<% end %>
+                <%= link_to edit_mct_registration_path(mct), :class => "btn btn-xxs btn-default" do %><i class="glyphicon glyphicon-pencil"></i> Edit<% end %>
             <% end %>
-            <%= link_to mct, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-xxs" do %><i class="glyphicon glyphicon-trash"></i> Delete<% end %>
+            <%= link_to mct, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-xxs btn-default" do %><i class="glyphicon glyphicon-trash"></i> Delete<% end %>
 
           </td>
         </tr>
@@ -39,4 +39,4 @@
 
 <br>
 
-<%= link_to new_mct_path, :class => "btn btn-xs" do %><i class="glyphicon glyphicon-plus"></i> New User<% end %>
+<%= link_to new_mct_path, :class => "btn btn-xs btn-default" do %><i class="glyphicon glyphicon-plus"></i> New User<% end %>
