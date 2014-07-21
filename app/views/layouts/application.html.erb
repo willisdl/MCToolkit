@@ -16,16 +16,16 @@
 
       <div class="navbar-collapse collapse" id="navbar-main">
         <ul class="nav navbar-nav">
-          <li class="active"><%= link_to 'Home!', homes_path %></li>
+          <li><h41><%= link_to 'Home', homes_path %></h41></li>
           <% if mct_signed_in? %>
-              <li><%= link_to 'Observations', '#' %></li>
+              <li><h41><%= link_to 'Observations', '#' %></h41></li>
               <% if current_mct.role != 'OC/T' %>
-                <li><%= link_to 'Analysis', '#' %></li>
-                <li><%= link_to 'AAR', '#'  %></li>
+                <li><h41><%= link_to 'Analysis', '#' %></h41></li>
+                <li><h41><%= link_to 'AAR', '#'  %></h41></li>
               <% end %>
               <% if current_mct.role == 'admin' %>
-                <li><%= link_to mcts_path, :class => "btn btn-trans" do %><h41>Accounts</h41><% end %></li>
-                <li><%= link_to exercises_path, :class => "btn btn-trans" do %><h41>Exercise</h41><% end %></li>
+                <li><h41><%= link_to 'Accounts', mcts_path %></h41></li>
+                <li><h41><%= link_to 'Exercises', exercises_path %></h41></li>
               <% end %>
           <% end %>
           <div class="nav navbar-right" style="padding-top: 0px">
