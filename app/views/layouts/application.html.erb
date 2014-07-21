@@ -15,8 +15,8 @@
     </div>
 
     <div class="navbar-collapse collapse" id="navbar-main" style="margin-top: 0px">
-      <ul class="nav navbar-nav">
-        <li class="active" style="padding-left: 8px; padding-right: 5px"><%= link_to 'Home', homes_path, class: 'h41' %></li>
+      <ul class="nav navbar-nav" style="margin-top: 5px">
+        <li style="padding-left: 8px; padding-right: 5px"><%= link_to 'Home', homes_path, class: 'h41' %></li>
         <% if mct_signed_in? %>
             <li style="padding-left: 5px; padding-right: 5px"><%= link_to 'Observations', '#', class: 'h41' %></li>
             <% if current_mct.role != 'OC/T' %>
@@ -29,7 +29,7 @@
             <% end %>
         <% end %>
 	  </ul>
-	  <ul class="nav navbar-nav navbar-right">
+	  <ul class="nav navbar-nav navbar-right" style="margin-top: 10px">
         <% if mct_signed_in? %>
           <li class="dropdown">
             <button class="btn btn-trans dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1"><h42><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %></h42><span class="caret"></span></button>
