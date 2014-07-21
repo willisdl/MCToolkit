@@ -29,8 +29,9 @@
         <%= f.fields_for :units do |unit| %>
           <%= render 'unit_fields', :f => unit %>
         <% end %>
-        <%= link_to_add_association 'Add Unit', f, :units %>
+        <%= link_to_add_association f, :units, :class => "btn btn-xs btn-success" do %><i class="glyphicon glyphicon-plus"></i> Add Unit<% end %>
       </div>
+	  <br/>
       <%= f.submit %>
     <% end %>
   </div>
