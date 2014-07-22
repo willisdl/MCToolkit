@@ -24,11 +24,12 @@ class ApplicationController < ActionController::Base
   end
 
   def default_admin
-    if Mct.where(email: 'admin').exists? != true
+    if Mct.where(email: 'admin@admin').exists? != true
       p 'Create admin user'
-      admin = Mct.create(:email => 'admin', :password => 'password', :password_confirmation => 'password', :role => 'admin')
+      admin = Mct.new(:email => 'admin@admin', :password => 'password', :password_confirmation => 'password', :role => 'admin', :lastname => 'admin', :firstname => 'admin', :rank => 'NA')
       p 'Save admin user'
-      admin.save
+      #admin.confirm!
+      admin.save(:validate => false)
       # p 'Done with admin'
 
     end
