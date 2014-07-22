@@ -38,13 +38,15 @@
 	    <br/>
 		
         <% if mct_signed_in? %>
-          <li class="dropdown">
-            <button class="btn btn-trans dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1"><h42><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %></h42><span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li><%= link_to 'Logout', destroy_mct_session_path, :method => :delete %></li>
-              <li><%= link_to 'Edit profile', edit_mct_path(current_mct) %></li>
-            </ul>
-          </li>
+            <% if current_mct.email != 'admin@admin' %>
+              <li class="dropdown">
+                <button class="btn btn-trans dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1"><h42><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %></h42><span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li><%= link_to 'Logout', destroy_mct_session_path, :method => :delete %></li>
+                  <li><%= link_to 'Edit profile', edit_mct_path(current_mct) %></li>
+                </ul>
+              </li>
+            <% end %>
         <% else %>
           <li><%= link_to new_mct_session_path, :class => "btn btn-xxs btn-trans" do %><h42>Login</h42><% end %></li>
           <li><%= link_to new_mct_registration_path, :class => "btn btn-xxs btn-trans" do  %><h42>Register</h42><% end %></li>
