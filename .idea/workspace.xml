@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b7d91e3-3f01-4167-bcf6-af83b710e6e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_unit_fields.erb" afterPath="$PROJECT_DIR$/app/views/exercises/_unit_fields.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/mcts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/mcts/index.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="dee7e52e-14b9-4f9c-b69b-f645a55f78f0" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/willisdl/MCToolkit&#10;&#10;Conflicts:&#10;&#9;config/mongoid.yml&#10;" />
@@ -21,7 +19,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MCToolkit@assets_precompile__MCToolkit.coverage" NAME="assets:precompile: MCToolkit Coverage Results" MODIFIED="1405734128509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MCToolkit" />
     <SUITE FILE_PATH="coverage/MCToolkit@IRB_console__MCToolkit.coverage" NAME="IRB console: MCToolkit Coverage Results" MODIFIED="1404438690953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MCToolkit" />
-    <SUITE FILE_PATH="coverage/MCToolkit@Development__MCToolkit.coverage" NAME="Development: MCToolkit Coverage Results" MODIFIED="1405776654931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MCToolkit" />
+    <SUITE FILE_PATH="coverage/MCToolkit@Development__MCToolkit.coverage" NAME="Development: MCToolkit Coverage Results" MODIFIED="1405987061283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="MCToolkit" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -47,16 +45,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="2" selection-start="631" selection-end="815" vertical-scroll-proportion="-7.375" vertical-offset="198" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_unit_fields.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/exercises/_unit_fields.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="55" selection-start="307" selection-end="307" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="285">
+            <state line="26" column="5" selection-start="783" selection-end="783" vertical-scroll-proportion="-7.375" vertical-offset="213" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
@@ -94,7 +83,7 @@
       <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="21" selection-start="919" selection-end="919" vertical-scroll-proportion="-11.875" vertical-offset="690" max-vertical-offset="1080">
+            <state line="70" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="-11.875" vertical-offset="765" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -103,9 +92,10 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="88" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-3.125" vertical-offset="435" max-vertical-offset="990">
+            <state line="14" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="-3.125" vertical-offset="135" max-vertical-offset="1080">
               <folding>
-                <element signature="n#style#0;n#div#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1405986737000" expanded="true" signature="2544:2571" placeholder="do ... end" />
+                <marker date="1405986737000" expanded="true" signature="2667:2698" placeholder="do ... end" />
               </folding>
             </state>
           </provider>
@@ -120,10 +110,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exercises_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="exercises_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="144" selection-start="2091" selection-end="2091" vertical-scroll-proportion="1.0650603" vertical-offset="728" max-vertical-offset="1305">
+            <state line="60" column="26" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="728" max-vertical-offset="1305">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scaffolds.old" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.old">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_unit_fields.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="12" selection-start="476" selection-end="476" vertical-scroll-proportion="0.3836317" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -142,6 +150,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -194,6 +207,7 @@
         <option value="$PROJECT_DIR$/app/views/exercises/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/exercises/_unit_fields.erb" />
         <option value="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb" />
       </list>
     </option>
   </component>
@@ -967,7 +981,11 @@
       <created>1405738114860</created>
       <updated>1405738114860</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="UPdated&#10;">
+      <created>1405935118789</created>
+      <updated>1405935118789</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1300,9 +1318,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="88" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-3.125" vertical-offset="435" max-vertical-offset="990">
+        <state line="14" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="-3.125" vertical-offset="135" max-vertical-offset="1080">
           <folding>
-            <element signature="n#style#0;n#div#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1405986737000" expanded="true" signature="2544:2571" placeholder="do ... end" />
+            <marker date="1405986737000" expanded="true" signature="2667:2698" placeholder="do ... end" />
           </folding>
         </state>
       </provider>
@@ -1330,14 +1349,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="2" selection-start="631" selection-end="815" vertical-scroll-proportion="-7.375" vertical-offset="198" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/_unit_fields.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="307" selection-end="307" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="285">
+        <state line="26" column="5" selection-start="783" selection-end="783" vertical-scroll-proportion="-7.375" vertical-offset="213" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
@@ -1365,14 +1377,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="21" selection-start="919" selection-end="919" vertical-scroll-proportion="-11.875" vertical-offset="690" max-vertical-offset="1080">
+        <state line="70" column="1" selection-start="958" selection-end="958" vertical-scroll-proportion="-11.875" vertical-offset="765" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="144" selection-start="2091" selection-end="2091" vertical-scroll-proportion="1.0650603" vertical-offset="728" max-vertical-offset="1305">
+        <state line="60" column="26" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="728" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="476" selection-end="476" vertical-scroll-proportion="0.3836317" vertical-offset="0" max-vertical-offset="391">
           <folding />
         </state>
       </provider>

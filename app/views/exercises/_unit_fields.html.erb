@@ -8,7 +8,7 @@
         <br/>
 		<div style="clear: both;"></div>
         <%= f.text_field :unit_name %>
-      </div>
+      </div><br/>
 	  <div id="ctos">
         <%= f.fields_for :ctos do |cto| %>
           <%= render 'cto_fields', :f => cto %>
