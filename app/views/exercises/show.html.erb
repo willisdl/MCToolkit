@@ -3,29 +3,29 @@
 <div class="panel panel-default">
   <div class="panel-body">
     <div class="field">
-		Exercise Name: <%= @exercise.name %>
+		<strong>Exercise Name:</strong> <%= @exercise.name %>
       </div>
       <div class="field">
-        Start Date: <% @exercise.start %>
+        <strong>Start Date:</strong> <%= @exercise.start %>
       </div>
       <div class="field">
-        End Date: <%= @exercise.end %>
+        <strong>End Date:</strong> <%= @exercise.end %>
       </div>
 	  <div id="units">
 	    <% @exercise.units.each do |unit| %>
 		  <div class="panel panel-default">
   		    <div class="panel-body">
-			  Unit Designation: <%= unit.unit_name %><br/>
+			  <strong>Unit Designation:</strong> <%= unit.unit_name %><br/>
 			  <table class="table">
       		    <thead>
         	  	  <tr>
-          		    <th>CTOs</th>
+          		    <th><strong>CTOs</strong></th>
 				  </tr>
 			    </thead>
 			    <tbody>
 			      <% unit.ctos.each do |cto| %>
 				    <tr>
-				      <td><%= cto %></td>
+				      <td><%= cto.cto %></td>
 				    </tr>
 				  <% end %>
 			    </tbody>
