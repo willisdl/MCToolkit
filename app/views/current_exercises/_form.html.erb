@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.collection_select :name, @ex_list, :name, :name %>
+    <%= f.collection_select :name, options_for_select(@ex_list) %>
   </div>
   <div class="actions">
     <%= f.submit %>
