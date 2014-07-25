@@ -26,9 +26,8 @@
             <% if current_mct.role == 'admin' %>
               <li style="padding-left: 5px; padding-right: 5px"><%= link_to 'Accounts', mcts_path, class: 'h41' %></li>
 			  <li class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">
-				  Exercises<span class="caret"/></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+			    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><h41>Exercises<h41><span class="caret"/></a>
+			    <ul class="dropdown-menu">
 				  <li><%= link_to 'Exercises', exercises_path %></li>
 				</ul>
 			  </li>
