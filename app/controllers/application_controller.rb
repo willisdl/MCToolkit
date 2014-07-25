@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
   $rolelist = Role.all
   $current_ex = CurrentExercise.first
-  if $current_ex != nil && $current_ex.name != 'Blank'
+  if CurrentExercise.first != nil && CurrentExercise.first != 'Blank'
     $unitlist = getunits
   end
 
@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
   end
 
   def getunits
-    ex = Exercise.where(name: $current_ex)
+    ex = Exercise.where(name: CurrentExercise.first.name)
     units = ex.units
   end
 
