@@ -14,9 +14,7 @@
     <% @current_exercises.each do |current_exercise| %>
       <tr>
         <td><%= current_exercise.name %></td>
-        <td><%= link_to 'Show', current_exercise %></td>
-        <td><%= link_to 'Edit', edit_current_exercise_path(current_exercise) %></td>
-        <td><%= link_to 'Destroy', current_exercise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Change', edit_current_exercise_path(current_exercise) %></td>
       </tr>
     <% end %>
   </tbody>
