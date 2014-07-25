@@ -1,5 +1,43 @@
 <p id="notice"><%= notice %></p>
 
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="field">
+		<strong>Exercise Name:</strong> <%= @exercise.name %>
+      </div>
+      <div class="field">
+        <strong>Start Date:</strong> <%= @exercise.start %>
+      </div>
+      <div class="field">
+        <strong>End Date:</strong> <%= @exercise.end %>
+      </div>
+	  <div id="units">
+	    <% @exercise.units.each do |unit| %>
+		  <div class="panel panel-default">
+  		    <div class="panel-body">
+			  <strong>Unit Designation:</strong> <%= unit.unit_name %><br/>
+			  <table class="table">
+      		    <thead>
+        	  	  <tr>
+          		    <th><strong>CTOs</strong></th>
+				  </tr>
+			    </thead>
+			    <tbody>
+			      <% unit.ctos.each do |cto| %>
+				    <tr>
+				      <td><%= cto.cto %></td>
+				    </tr>
+				  <% end %>
+			    </tbody>
+			  </table>
+			</div>
+		  </div>
+		<% end %>
+	  </div>
+	</div>
+  </div>
+</div>
+      
 <p>
   <strong>Name:</strong>
   <%= @exercise.name %>

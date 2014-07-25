@@ -31,7 +31,7 @@ class ExercisesController < ApplicationController
 
     respond_to do |format|
       if @exercise.save
-        format.html { redirect_to exercises_path, notice: 'Exercise was successfully created.' }
+        format.html { redirect_to exercises_url, notice: 'Exercise was successfully created.' }
         format.json { render action: 'index', status: :created, location: @exercise }
       else
         format.html { render action: 'new' }
@@ -45,7 +45,7 @@ class ExercisesController < ApplicationController
   def update
     respond_to do |format|
       if @exercise.update(exercise_params)
-        format.html { redirect_to @exercise, notice: 'Exercise was successfully updated.' }
+        format.html { redirect_to exercises_url, notice: 'Exercise was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
