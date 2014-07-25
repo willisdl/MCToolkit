@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
   $rolelist = Role.all
   $current_ex = CurrentExercise.first
-  if CurrentExercise.first != nil && CurrentExercise.first != 'Blank'
+  if CurrentExercise.first != nil && CurrentExercise.first.name != 'Blank'
     $unitlist = getunits
   end
 
