@@ -30,8 +30,8 @@
         <% end %>
 	  </ul>
 	  <ul class="nav navbar-nav navbar-right" style="margin-top: 10px">
-	    <% if $current_ex != nil %>
-		  <span style="margin-right: 4px"><h41><%= $current_ex %></h41></span>
+	    <% if CurrentExercise.first != nil %>
+		  <span style="margin-right: 4px"><h41><%= CurrentExercise.first.name %></h41></span>
 		<% else %>
 		  <span style="margin-right: 4px"><h41>No Exercise Set</h41></span>
 		<% end %>
