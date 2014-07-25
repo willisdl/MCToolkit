@@ -5,6 +5,10 @@ class CurrentExercisesController < ApplicationController
   # GET /current_exercises.json
   def index
     @current_exercises = CurrentExercise.all
+	@ex_list = Array.new
+	Exercise.all.each do |ex|
+	  @ex_list.push(ex.name)
+	end
   end
 
   # GET /current_exercises/1

@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_filter :configure_permitted_parameters, if: :devise_controller?
-  before_action :default_admin
+  before_action :default_admin, :default_ex
 
 
   $rolelist = Role.all
@@ -35,6 +35,13 @@ class ApplicationController < ActionController::Base
       # p 'Done with admin'
 
     end
+  end
+  
+  def default_ex
+    if CurrentExercise.first == nil
+	  blank_ex = CurrentExercise.new(:name => 'Blank')
+	  blank_ex.save
+	end
   end
 
 end
