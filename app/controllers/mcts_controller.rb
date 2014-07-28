@@ -17,11 +17,39 @@ class MctsController < ApplicationController
   def new
     @mct = Mct.new
     @dropdown_options = Role.all
+    @ex_list = Array.new
+    Exercise.all.each do |ex|
+      @ex_list.push(ex.name)
+    end
+    ex = Exercise.find_by(name: CurrentExercise.first.name)
+    if ex != nil
+      units = ex.units
+      @unit_list = Array.new
+      units.each do |unit|
+        @unit_list.push(unit.unit_name)
+      end
+    else
+      @unit_list = nil
+    end
   end
 
   # GET /mcts/1/edit
   def edit
     @dropdown_options = Role.all
+    @ex_list = Array.new
+    Exercise.all.each do |ex|
+      @ex_list.push(ex.name)
+    end
+    ex = Exercise.find_by(name: CurrentExercise.first.name)
+    if ex != nil
+      @units = ex.units
+      @unit_list = Array.new
+      @units.each do |unit|
+        @unit_list.push(unit.unit_name)
+      end
+    else
+      @unit_list = nil
+    end
   end
 
   # POST /mcts

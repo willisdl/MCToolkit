@@ -31,6 +31,22 @@
   <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></div>
 
+    <% @ex = Exercise.find_by(name: CurrentExercise.first.name)
+       if @ex != nil
+         @units = @ex.units
+         unit_list = Array.new
+         @units.each do |unit|
+           unit_list.push(unit.unit_name)
+         end
+       else
+         unit_list = nil
+       end %>
+
+    <div>
+      <%= f.label text='Assigned Unit' %><br>
+      <%= f.collection_select :unit_assign, @units, :unit_name, :unit_name %>
+    </div>
+
   <div><%= f.submit "Update" %></div>
 <% end %>
 

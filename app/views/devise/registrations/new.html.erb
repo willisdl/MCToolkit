@@ -21,7 +21,23 @@
 
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
-  
+
+  <% @ex = Exercise.find_by(name: CurrentExercise.first.name)
+     if @ex != nil
+       @units = @ex.units
+       unit_list = Array.new
+       @units.each do |unit|
+         unit_list.push(unit.unit_name)
+       end
+     else
+       unit_list = nil
+     end %>
+
+  <div>
+    <%= f.label text='Assigned Unit' %><br>
+    <%= f.select :unit_assign, options_for_select(unit_list) %>
+  </div>
+
   <div><%= f.label text='Role' %><br />
   <%= f.select :role, options_for_select(['OC/T','Analyst','CHOT']) %></div>
 

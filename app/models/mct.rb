@@ -41,4 +41,5 @@ class Mct
   field :firstname, type: String
   field :rank, type: String
   field :role, type: String
+  field :unit_assign, type: String
 end

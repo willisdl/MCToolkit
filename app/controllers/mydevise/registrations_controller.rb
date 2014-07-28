@@ -1,14 +1,26 @@
 class RegistrationsController < Devise::RegistrationsController
   def new
+    @ex_list = Array.new
+    Exercise.all.each do |ex|
+      @ex_list.push(ex.name)
+    end
     super
   end
 
   def create
     super
+    @ex_list = Array.new
+    Exercise.all.each do |ex|
+      @ex_list.push(ex.name)
+    end
   end
 
   def edit
     super
+    @ex_list = Array.new
+    Exercise.all.each do |ex|
+      @ex_list.push(ex.name)
+    end
   end
 
   def update
