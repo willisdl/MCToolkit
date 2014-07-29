@@ -16,7 +16,7 @@
       <td><%= f.text_field :lastname, :autofocus => true %></td>
     </tr>
 	<tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='First name' %><td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='First name' %></td>
   	  <td><%= f.text_field :firstname, :autofocus => true %></td>
 	</tr>
 	<tr>
@@ -27,7 +27,7 @@
 	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 0px"><%= f.label text='Password:' %></td> 
 	  <td><%= f.password_field :password, :autocomplete => "off" %></td>
 	</tr>
-	<tr><td style="padding-bottom: 2px; text-aling: right"><i>(leave blank if you don't want to change it)</i></td></tr>
+	<tr><td style="padding-bottom: 2px; text-align: right"><i>(leave blank if you don't want to change it)</i></td><td></td></tr>
     <tr>
 	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Confirm Password:' %></td>
       <td><%= f.password_field :password_confirmation %></td>
@@ -58,7 +58,7 @@
     </tr>
   <table>
   <br/>
-  <div><%= f.submit "Update" %></div>
+  <div style="text-align: center"><%= f.submit "Update" %></div>
 <% end %>
 
 <h3>Cancel my account</h3>
