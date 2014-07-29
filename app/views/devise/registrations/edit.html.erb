@@ -3,37 +3,44 @@
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div><%= f.label text='Role' %><br />
-  <%= f.collection_select :role, $rolelist, :title, :title %></div>
-  
-  <div><%= f.label text='Role!' %><br />
-  <%= f.select :role, options_for_select(['OC/T', 'Analyst', 'CHOT'], f.object.role) %></div>
-
-  <div><%= f.label text='Last name' %><br />
-  <%= f.text_field :lastname, :autofocus => true %></div>
-
-  <div><%= f.label text='First name' %><br />
-  <%= f.text_field :firstname, :autofocus => true %></div>
-
-  <div><%= f.label text='Rank' %><br />
-  <%= f.text_field :rank, :autofocus => true %></div>
-
-    <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-  <%= f.password_field :password, :autocomplete => "off" %></div>
-
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
-
-  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%= f.password_field :current_password %></div>
-
+  <table>
+    <tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label test='Email:' %></td>
+  	  <td><%= f.email_field :email, :autofocus => true %></td>
+	</tr>
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <tr><td>Currently waiting confirmation for: <%= resource.unconfirmed_email %></td></tr>
+    <% end %>
+    <tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Last name' %></td>
+      <td><%= f.text_field :lastname, :autofocus => true %></td>
+    </tr>
+	<tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='First name' %><td>
+  	  <td><%= f.text_field :firstname, :autofocus => true %></td>
+	</tr>
+	<tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Rank' %></td>
+      <td><%= f.text_field :rank, :autofocus => true %></td>
+    </tr>
+	<tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 0px"><%= f.label text='Password:' %></td> 
+	  <td><%= f.password_field :password, :autocomplete => "off" %></td>
+	</tr>
+	<tr><td style="padding-bottom: 2px; text-aling: right"><i>(leave blank if you don't want to change it)</i></td></tr>
+    <tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Confirm Password:' %></td>
+      <td><%= f.password_field :password_confirmation %></td>
+    </tr>
+	<tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Current Password' %></td>
+	  <td><%= f.password_field :current_password %></td>
+	</tr>
+	<tr><td style="padding-bottom: 2px; text-aling: right"><i>(we need your current password to confirm your changes)</i></td></tr>
+    <tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Role' %></td>
+      <td><%= f.select :role, options_for_select(['OC/T', 'Analyst', 'CHOT'], f.object.role) %></td>
+    </tr>
     <% @ex = Exercise.find_by(name: CurrentExercise.first.name)
        if @ex != nil
          @units = @ex.units
@@ -45,11 +52,12 @@
          unit_list = nil
        end %>
 
-    <div>
-      <%= f.label text='Assigned Unit' %><br>
-      <%= f.collection_select :unit_assign, @units, :unit_name, :unit_name %>
-    </div>
-
+    <tr>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Assigned Unit' %></td>
+      <td><%= f.collection_select :unit_assign, @units, :unit_name, :unit_name %></td>
+    </tr>
+  <table>
+  <br/>
   <div><%= f.submit "Update" %></div>
 <% end %>
 
