@@ -113,7 +113,7 @@ class MctsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def mct_params
       #params[:mct]
-      params.require(:mct).permit(:email, :lastname, :firstname, :rank, :role)
+      params.require(:mct).permit(:email, :lastname, :firstname, :rank, :role, :unit_assign)
     end
 
     # https://github.com/plataformatec/devise/wiki/How-To%3a-Allow-users-to-edit-their-account-without-providing-a-password
