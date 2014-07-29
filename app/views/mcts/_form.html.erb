@@ -13,27 +13,27 @@
 
   <table>
     <tr>
-	  <td style="text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Email' %></td>
+	  <td style="vertical-align: middle; text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Email' %></td>
       <td><%= f.text_field :email %></td>
 	</tr>
 	<tr>
-	  <td style="text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Last Name' %></td>
+	  <td style="vertical-align: middle; text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Last Name' %></td>
       <td><%= f.text_field :lastname %></td>
 	</tr>
 	<tr>
-	  <td style="text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='First Name' %></td>
+	  <td style="vertical-align: middle; text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='First Name' %></td>
       <td><%= f.text_field :firstname %></td>
 	</tr>
 	<tr>
-	  <td style="text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Rank' %></td>
+	  <td style="vertical-align: middle; text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Rank' %></td>
       <td><%= f.text_field :rank %></td>
 	</tr>
 	<tr>
-	  <td style="text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Assigned Unit' %></td>
+	  <td style="vertical-align: middle; text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Assigned Unit' %></td>
       <td><%= f.collection_select :unit_assign, @units, :unit_name, :unit_name %></td>
 	</tr>
 	<tr>
-	  <td style="text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Role' %></td>
+	  <td style="vertical-align: middle; text-align: right; padding-right: 5px; padding-bottom: 5px"><%= f.label text='Role' %></td>
       <td><%= f.collection_select :role, $rolelist, :title, :title %></td>
     </tr>
   </table>
