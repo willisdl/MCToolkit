@@ -14,7 +14,7 @@
   <%= f.collection_select :role, $rolelist, :title, :title %></div>
   
   <div><%= f.label text='Role!' %><br />
-  <%= f.select :role, options_for_select(['OC/T', 'Analyst', 'CHOT'], f.object.role) %></div>
+  <%= f.select :role, options_for_select(['OC/T', 'Analyst', 'CHOT']), :selected => f.object.role %></div>
 
   <div><%= f.label text='Last name' %><br />
   <%= f.text_field :lastname, :autofocus => true %></div>
