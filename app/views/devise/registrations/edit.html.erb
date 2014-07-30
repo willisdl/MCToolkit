@@ -59,7 +59,7 @@
 	<tr><td><br/></td></tr>
 	<tr>
 	  <td style="text-align: right"><%= f.submit "Update" %></td>
-	  <td><%= button_to "Cancel", :back, method: :get  %></td>
+	  <td><%= link_to "<button>Cancel</button>".html_safe, :back %></td>
 	</tr>
   <table>
 <% end %>
