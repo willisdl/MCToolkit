@@ -12,15 +12,15 @@
       <tr><td>Currently waiting confirmation for: <%= resource.unconfirmed_email %></td></tr>
     <% end %>
     <tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Last name' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Last name:' %></td>
       <td><%= f.text_field :lastname, :autofocus => true %></td>
     </tr>
 	<tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='First name' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='First name:' %></td>
   	  <td><%= f.text_field :firstname, :autofocus => true %></td>
 	</tr>
 	<tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Rank' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Rank:' %></td>
       <td><%= f.text_field :rank, :autofocus => true %></td>
     </tr>
 	<tr>
@@ -33,12 +33,12 @@
       <td><%= f.password_field :password_confirmation %></td>
     </tr>
 	<tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Current Password' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Current Password:' %></td>
 	  <td><%= f.password_field :current_password %></td>
 	  <td style="padding-bottom: 2px; padding-left: 5px"><i>(we need your current password to confirm your changes)</i></td>
 	</tr>
     <tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Role' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Role:' %></td>
       <td><%= f.select :role, options_for_select(['OC/T', 'Analyst', 'CHOT'], f.object.role) %></td>
     </tr>
     <% @ex = Exercise.find_by(name: CurrentExercise.first.name)
@@ -53,7 +53,7 @@
        end %>
 
     <tr>
-      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Assigned Unit' %></td>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Assigned Unit:' %></td>
       <td><%= f.collection_select :unit_assign, @units, :unit_name, :unit_name %></td>
     </tr>
 	<tr/>
