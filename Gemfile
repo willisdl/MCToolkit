@@ -64,6 +64,8 @@ gem 'cocoon'
 
 gem 'mongoid-sadstory'
 
+gem 'fullcalendar-rails'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
