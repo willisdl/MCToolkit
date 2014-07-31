@@ -48,7 +48,7 @@
 		  </td>
 		</tr>
 		<tr>
-		  <td>
+		  <td style="text-align: center">
             <% if mct_signed_in? %>
               <div class="dropdown">
                 <button class="btn btn-trans dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1"><h42><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %></h42><span class="caret"></span></button>
@@ -58,7 +58,7 @@
                 </ul>
               </div>
             <% else %>
-              <%= link_to 'Login', new_mct_session_path, style: 'color: black;' %>
+              <%= link_to 'Login', new_mct_session_path, style: 'color: black;' %>&nbsp;
               <%= link_to 'Register', new_mct_registration_path, style: 'color: black;' %>
             <% end %>
 		  </td>
