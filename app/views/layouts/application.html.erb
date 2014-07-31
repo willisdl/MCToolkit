@@ -36,27 +36,35 @@
             <% end %>
         <% end %>
 	  </ul>
-	  <ul class="nav navbar-nav navbar-right" style="margin-top: 10px; text-align: right">
-	    <% if CurrentExercise.first != nil %>
-		  <span style="margin-right: 4px; text-align: right"><h41><%= CurrentExercise.first.name %></h41></span>
-		<% else %>
-		  <span style="margin-right: 4px"><h41>No Exercise Set</h41></span>
-		<% end %>
-	    
-		
-        <% if mct_signed_in? %>
-          <li class="dropdown">
-            <button class="btn btn-trans dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1"><h42><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %></h42><span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li><%= link_to 'Logout', destroy_mct_session_path, :method => :delete %></li>
-              <li><%= link_to 'Edit profile', edit_mct_registration_path(current_mct) %></li>
-            </ul>
-          </li>
-        <% else %>
-          <li><%= link_to 'Login', new_mct_session_path, style: 'color: black;' %></li>
-          <li><%= link_to 'Register', new_mct_registration_path, style: 'color: black;' %></li>
-        <% end %>
-      </ul>
+	  <div class="nav navbar-nav navbar-right" style="margin-top: 10px; text-align: right">
+	  <table>
+	    <tr>
+		  <td>
+	        <% if CurrentExercise.first != nil %>
+		      <span style="margin-right: 4px; text-align: right"><h41><%= CurrentExercise.first.name %></h41></span>
+		    <% else %>
+		      <span style="margin-right: 4px"><h41>No Exercise Set</h41></span>
+		    <% end %>
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+            <% if mct_signed_in? %>
+              <div class="dropdown">
+                <button class="btn btn-trans dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1"><h42><%= current_mct.rank + " " + current_mct.firstname + " " + current_mct.lastname %></h42><span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li><%= link_to 'Logout', destroy_mct_session_path, :method => :delete %></li>
+                  <li><%= link_to 'Edit profile', edit_mct_registration_path(current_mct) %></li>
+                </ul>
+              </div>
+            <% else %>
+              <ul><%= link_to 'Login', new_mct_session_path, style: 'color: black;' %></li>
+              <ul><%= link_to 'Register', new_mct_registration_path, style: 'color: black;' %></li>
+            <% end %>
+		  </td>
+		</tr>
+      </table>
+      </div>
 	</div>
 	
   </div>
