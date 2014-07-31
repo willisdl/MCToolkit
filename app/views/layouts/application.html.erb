@@ -58,8 +58,10 @@
                 </ul>
               </div>
             <% else %>
-              <ul><%= link_to 'Login', new_mct_session_path, style: 'color: black;' %></li>
-              <ul><%= link_to 'Register', new_mct_registration_path, style: 'color: black;' %></li>
+			  <ul>
+                <li><%= link_to 'Login', new_mct_session_path, style: 'color: black;' %></li>
+                <li><%= link_to 'Register', new_mct_registration_path, style: 'color: black;' %></li>
+			  </ul>
             <% end %>
 		  </td>
 		</tr>
