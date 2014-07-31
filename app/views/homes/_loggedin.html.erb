@@ -1,8 +1,4 @@
-<script>
-  $(document).ready(function() {
-    $('#calendar').fullCalendar();
-  });
-</script>
+
 
 <div class="panel panel-default">
   <!-- Default panel contents -->
@@ -13,6 +9,6 @@
 	<h3>Announcements:</h3>
 	<br/>
 	<h3>Calendar:</h3>
-	<div id='calendar'></div>
+	<%= render 'events/cal' %>
   </div>
 </div>
