@@ -53,8 +53,8 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to new_mct_session_path, :class => "btn btn-xxs btn-trans" do %><h42>Login</h42><% end %></li>
-          <li><%= link_to new_mct_registration_path, :class => "btn btn-xxs btn-trans" do  %><h42>Register</h42><% end %></li>
+          <li><%= link_to 'Login', new_mct_session_path, style: 'color: black;' %></li>
+          <li><%= link_to 'Register', new_mct_registration_path, style: 'color: black;' %></li>
         <% end %>
       </ul>
 	</div>
