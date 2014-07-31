@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div class="navbar navbar-default navbar-fixed-top", style="height: 65px">
+<div class="navbar navbar-default navbar-fixed-top" style="height: 65px">
   <div class="container-fluid">
     <div class="nav navbar-left">
       <%= image_tag "75th_Infantry_Division_patc.jpg", size: "50x50", style: "margin-top: 5px; margin-bottom: 5px;" %>
@@ -58,8 +58,8 @@
                 </ul>
               </div>
             <% else %>
-              <%= link_to 'Login', new_mct_session_path, style: 'color: black;' %>&nbsp;
-              <%= link_to 'Register', new_mct_registration_path, style: 'color: black;' %>
+                <%= link_to new_mct_session_path, :class => "btn btn-xxs btn-trans" do %><h42>Login</h42><% end %>&nbsp;
+                <%= link_to new_mct_registration_path, :class => "btn btn-xxs btn-trans" do  %><h42>Register</h42><% end %>
             <% end %>
 		  </td>
 		</tr>
