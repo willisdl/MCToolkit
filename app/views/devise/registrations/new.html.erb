@@ -9,42 +9,54 @@
 	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Last Name' %></td>
       <td><%= f.text_field :lastname, :autofocus => true %></td>
 	</tr>
+    <tr>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='First Name' %></td>
+      <td><%= f.text_field :firstname, :autofocus => true %></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Rank' %></td>
+      <td><%= f.text_field :rank, :autofocus => true %></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label :email %></td>
+      <td><%= f.email_field :email, :autofocus => true %></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label :password %></td>
+      <td><%= f.password_field :password %></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label :password_confirmation %></td>
+      <td><%= f.password_field :password_confirmation %></td>
+    </tr>
 
-  <div><%= f.label text='First Name' %><br />
-  <%= f.text_field :firstname, :autofocus => true %></div>
+      <% @ex = Exercise.find_by(name: CurrentExercise.first.name)
+         if @ex != nil
+           @units = @ex.units
+           unit_list = Array.new
+           @units.each do |unit|
+             unit_list.push(unit.unit_name)
+           end
+         else
+           unit_list = nil
+         end %>
 
-  <div><%= f.label text='Rank' %><br />
-  <%= f.text_field :rank, :autofocus => true %></div>
-
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
-
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
-
-  <% @ex = Exercise.find_by(name: CurrentExercise.first.name)
-     if @ex != nil
-       @units = @ex.units
-       unit_list = Array.new
-       @units.each do |unit|
-         unit_list.push(unit.unit_name)
-       end
-     else
-       unit_list = nil
-     end %>
-
-  <div>
-    <%= f.label text='Assigned Unit' %><br>
-    <%= f.select :unit_assign, options_for_select(unit_list) %>
-  </div>
-
-  <div><%= f.label text='Role' %><br />
-  <%= f.select :role, options_for_select(['OC/T','Analyst','CHOT']) %></div>
+    <tr>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Assigned Unit' %></td>
+      <td><%= f.select :unit_assign, options_for_select(unit_list) %></td>
+    </tr>
+    <tr>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Role' %></td>
+      <td><%= f.select :role, options_for_select(['OC/T','Analyst','CHOT']) %></td>
+    </tr>
+    <tr><td><br/></td></tr>
+    <tr>
+      <td style="text-align: right; padding-right: 2px"><%= f.submit "Sign Up" %></td>
+      <td style="padding-left: 2px"><%= link_to '<button >Cancel</button>'.html_safe, :back, style: 'color: black;' %></td>
+    </tr>
+  </table>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>
-
+<br/>
 <%= render "devise/shared/links" %>
