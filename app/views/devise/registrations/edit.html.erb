@@ -1,4 +1,4 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2>Edit User</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
@@ -12,33 +12,33 @@
       <tr><td>Currently waiting confirmation for: <%= resource.unconfirmed_email %></td></tr>
     <% end %>
     <tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Last name' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Last name:' %></td>
       <td><%= f.text_field :lastname, :autofocus => true %></td>
     </tr>
 	<tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='First name' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='First name:' %></td>
   	  <td><%= f.text_field :firstname, :autofocus => true %></td>
 	</tr>
 	<tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Rank' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Rank:' %></td>
       <td><%= f.text_field :rank, :autofocus => true %></td>
     </tr>
 	<tr>
 	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 0px"><%= f.label text='Password:' %></td> 
 	  <td><%= f.password_field :password, :autocomplete => "off" %></td>
+	  <td style="padding-bottom: 2px; padding-left: 5px"><i>(leave blank if you don't want to change it)</i></td>
 	</tr>
-	<tr><td style="padding-bottom: 2px; text-align: right"><i>(leave blank if you don't want to change it)</i></td><td></td></tr>
     <tr>
 	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Confirm Password:' %></td>
       <td><%= f.password_field :password_confirmation %></td>
     </tr>
 	<tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Current Password' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Current Password:' %></td>
 	  <td><%= f.password_field :current_password %></td>
+	  <td style="padding-bottom: 2px; padding-left: 5px"><i>(we need your current password to confirm your changes)</i></td>
 	</tr>
-	<tr><td style="padding-bottom: 2px; text-aling: right"><i>(we need your current password to confirm your changes)</i></td></tr>
     <tr>
-	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Role' %></td>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Role:' %></td>
       <td><%= f.select :role, options_for_select(['OC/T', 'Analyst', 'CHOT'], f.object.role) %></td>
     </tr>
     <% @ex = Exercise.find_by(name: CurrentExercise.first.name)
@@ -53,16 +53,13 @@
        end %>
 
     <tr>
-      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Assigned Unit' %></td>
+      <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Assigned Unit:' %></td>
       <td><%= f.collection_select :unit_assign, @units, :unit_name, :unit_name %></td>
     </tr>
+	<tr><td><br/></td></tr>
+	<tr>
+	  <td style="text-align: right; padding-right: 2px"><%= f.submit "Update" %></td>
+	  <td style="padding-left: 2px"><%= link_to '<button >Cancel</button>'.html_safe, :back, style: 'color: black;' %></td>
+	</tr>
   <table>
-  <br/>
-  <div style="text-align: center"><%= f.submit "Update" %></div>
 <% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %></p>
-
-<%= link_to "Back", :back %>

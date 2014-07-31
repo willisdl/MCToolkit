@@ -4,8 +4,11 @@
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label text='Last Name' %><br />
-  <%= f.text_field :lastname, :autofocus => true %></div>
+  <table>
+    <tr>
+	  <td style="padding-top: 3px; text-align: right; padding-right: 5px; padding-bottom: 2px"><%= f.label text='Last Name' %></td>
+      <td><%= f.text_field :lastname, :autofocus => true %></td>
+	</tr>
 
   <div><%= f.label text='First Name' %><br />
   <%= f.text_field :firstname, :autofocus => true %></div>
