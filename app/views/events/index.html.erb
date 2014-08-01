@@ -1,15 +1,7 @@
-<script>
-  $(document).ready(function() {
-    $('#calendar').fullCalendar({
-      events: '/events.json'
-      });
-  });
-</script>
-
 
 <h1>Listing events</h1>
 
-<div id='calendar'></div>
+
 <table>
   <thead>
     <tr>
@@ -41,3 +33,5 @@
 <br>
 
 <%= link_to 'New Event', new_event_path %>
+
+<div id='calendar'></div>
