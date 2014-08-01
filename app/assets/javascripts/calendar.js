@@ -6,6 +6,7 @@ var ready = function() {
             center: 'title',
             right: 'month,agendaWeek,agendaDay'
         },
+        defaultView: 'agendaWeek',
         weekMode: 'liquid',
         eventRender: function(event, element) {
             if(event.event_type == "meeting") {
