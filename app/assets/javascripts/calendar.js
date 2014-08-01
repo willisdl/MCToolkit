@@ -6,6 +6,7 @@ var ready = function() {
             center: 'title',
             right: 'month,agendaWeek,agendaDay'
         },
+        weekMode: 'liquid',
         eventRender: function(event, element) {
             if(event.event_type == "meeting") {
                 element.css('background-color', 'lightgreen');
