@@ -1,8 +1,10 @@
 <script>
   $(document).ready(function() {
-    $('#calendar').fullCalendar(
-      events: '/events.json'
-      );
+    $('#calendar').fullCalendar({
+      events: '/events.json',
+      height: 200,
+      textColor: white
+      });
   });
 </script>
 
