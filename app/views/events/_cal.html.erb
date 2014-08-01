@@ -1,11 +1,12 @@
 <script>
   $(document).ready(function() {
     $('#calendar').fullCalendar({
-      events: '/events.json',
+      url: '/events.json',
       height: 200,
       textColor: 'white'
+      aspectRatio: 1.35
       });
   });
 </script>
 
-<div id='calendar'></div>
+<div id='calendar' style="text-align: center"></div>
