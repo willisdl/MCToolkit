@@ -1,7 +1,9 @@
 <script>
   $(document).ready(function() {
     $('#calendar').fullCalendar(
-      events: '/events'
+      eventSources: [{  
+        url: '/events',  
+      }]
       );
   });
 </script>
