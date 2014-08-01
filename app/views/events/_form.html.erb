@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :event_type %><br>
-    <%= f.text_field :event_type %>
+    <%= f.select :event_type, options_for_select(["Meeting","meeting"],["MSEL Event","msel"],["OC/T Training","oct_tng"] %>
   </div>
   <div class="actions">
     <%= f.submit %>

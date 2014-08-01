@@ -1,21 +1,3 @@
-<script>
-  $(document).ready(function() {
-    $('#calendar').fullCalendar({
-      events: '/events.json',
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay'
-      },
-      eventRender: function(event, element) {
-                if(event.event_type == "meeting") {
-                    element.css('background-color', 'lightgreen');
-                    element.css('border-color', 'lightgreen');
-                    element.css('color', 'black');
-                }
-            }
-      });
-  });
-</script>
+
 
 <div id='calendar' style="float: none; margin: 0 auto; text-align: center; width: 70%"></div>
