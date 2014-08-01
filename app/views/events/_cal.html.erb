@@ -3,6 +3,11 @@
     $('#calendar').fullCalendar({
       events: '/events.json',
       textColor: 'white'
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,basicWeek,basicDay'
+      }
       });
   });
 </script>
