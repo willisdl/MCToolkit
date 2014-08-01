@@ -2,7 +2,6 @@
   $(document).ready(function() {
     $('#calendar').fullCalendar({
       events: '/events.json',
-      textColor: 'white',
       header: {
         left: 'prev,next today',
         center: 'title',
@@ -11,6 +10,8 @@
       eventRender: function(event, element) {
                 if(event.event_type == "meeting") {
                     element.css('background-color', 'lightgreen');
+                    element.css('border-color', 'lightgreen');
+                    element.css('color', 'black');
                 }
             }
       });
