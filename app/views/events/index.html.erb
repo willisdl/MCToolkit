@@ -1,6 +1,15 @@
+<script>
+  $(document).ready(function() {
+    $('#calendar').fullCalendar(
+      events: '/events.json'
+      );
+  });
+</script>
+
+
 <h1>Listing events</h1>
 
-<%= render 'cal' %>
+<div id='calendar'></div>
 <table>
   <thead>
     <tr>
