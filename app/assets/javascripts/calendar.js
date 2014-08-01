@@ -1,4 +1,4 @@
-$(document).on('page:load', function() {
+var ready = function() {
     $('#calendar').fullCalendar({
         events: '/events.json',
         header: {
@@ -24,4 +24,7 @@ $(document).on('page:load', function() {
             }
         }
     });
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
