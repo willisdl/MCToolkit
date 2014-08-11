@@ -1,16 +1,23 @@
+<%= stylesheet_link_tag "aristo/theme" %>  
+<%= stylesheet_link_tag "prime-ui" %>   
+  
+<%= javascript_include_tag "prime-ui" %>
 
 <div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="panel-heading"><h1>Mission Command Toolkit</h1></div>
   <div class="panel-body">
     <h2> Current Exercise: <%= CurrentExercise.first.name %></h2>
-	<br/>
-	<h3>Announcements:</h3>
-	<br/>
-	<h3>Exercise Calendar:</h3>
-	<div class="container">
+	  <br/>
+	  <h3>Announcements:</h3>
+	  <br/>
+	  <%= p_panel('default',title: 'Exercise Calendar',style: 'margin-bottom:20px', toggleable: true)  do %>
 	    <%= render 'events/cal' %>
-	</div>
+	  <% end %>
+	  <h3>Exercise Calendar:</h3>
+	  <div class="container">
+	    <%= render 'events/cal' %>
+	  </div>
 	
   </div>
 </div>

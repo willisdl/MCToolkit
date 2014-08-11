@@ -52,13 +52,11 @@ gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 
 gem 'mongoid-grid_fs'
 
-# gem 'bootstrap-sass-rails'
-
-# gem 'twitter-bootstrap-rails'
-
 gem 'devise'
 
 gem 'haml', '4.0.5'
+
+gem 'prime-rails' 
 
 gem 'cocoon'
 
