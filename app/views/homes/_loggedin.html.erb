@@ -12,13 +12,8 @@
 	  <h3>Announcements:</h3>
 	  <br/>
 	  <%= p_panel('calendar',title: 'Exercise Calendar',style: 'margin-bottom:20px', toggleable: true)  do %>
-	    <%= p_button_tag('Default',id: 'default') %>  
 	    <%= render 'events/cal' %>
 	  <% end %>
-	  <h3>Exercise Calendar:</h3>
-	  <div class="container">
-	    <%= render 'events/cal' %>
-	  </div>
 	
   </div>
 </div>
