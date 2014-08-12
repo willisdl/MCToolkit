@@ -3,13 +3,10 @@
   
 <%= javascript_include_tag "prime-ui" %>
 
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading"><h1>Mission Command Toolkit</h1></div>
-  <div class="panel-body">
-    <h2> Current Exercise: <%= CurrentExercise.first.name %></h2>
-  </div>
+<div style="text-align: center">
+    <h1><%= CurrentExercise.first.name %></h1>
 </div>
+<br/>
 <%= p_panel('announce',title: 'Announcements', style: 'text-align: center')  do %>
   <br/>
 <% end %>
