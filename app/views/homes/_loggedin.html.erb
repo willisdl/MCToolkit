@@ -11,6 +11,10 @@
   <br/>
 <% end %>
 <br/>
+<div class="panel panel-default">
+    <div class="panel-heading" style="text-align: center"><%= link_to 'Exercise Calendar', events_path, class: 'h2' %></div>
+    <%= render 'events/cal' %>
+</div>
 <%= p_panel('calendar',title: 'Exercise Calendar',style: 'text-align: center')  do %>
   <%= render 'events/cal' %>
 <% end %>
