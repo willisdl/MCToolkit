@@ -7,14 +7,13 @@
     <h1><%= CurrentExercise.first.name %></h1>
 </div>
 <br/>
-<%= p_panel('announce',title: 'Announcements', style: 'text-align: center')  do %>
-  <br/>
-<% end %>
+<div class="panel panel-default">
+    <div class="panel-heading" style="text-align: center"><h2>Announcements</h2></div>
+    <br/>
+</div>
 <br/>
 <div class="panel panel-default">
     <div class="panel-heading" style="text-align: center"><%= link_to 'Exercise Calendar', events_path, class: 'h2' %></div>
+    <br/>
     <%= render 'events/cal' %>
 </div>
-<%= p_panel('calendar',title: 'Exercise Calendar',style: 'text-align: center')  do %>
-  <%= render 'events/cal' %>
-<% end %>
