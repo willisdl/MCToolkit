@@ -8,11 +8,11 @@
   <div class="panel-heading"><h1>Mission Command Toolkit</h1></div>
   <div class="panel-body">
     <h2> Current Exercise: <%= CurrentExercise.first.name %></h2>
-	  <br/>
-	  <h3>Announcements:</h3>
-	  <br/>
-	  <%= p_panel('calendar',title: 'Exercise Calendar',style: 'margin: 0 auto; width: 70%; text-align: center', toggleable: true)  do %>
-	   	<%= render 'events/cal' %>
-	  <% end %>
   </div>
 </div>
+<%= p_panel('announce',title: 'Announcements', style: 'text-align: center')  do %>
+  <br/>
+<% end %>
+<%= p_panel('calendar',title: 'Exercise Calendar',style: 'margin: 0 auto; width: 70%; text-align: center')  do %>
+  <%= render 'events/cal' %>
+<% end %>
