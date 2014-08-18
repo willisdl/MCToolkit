@@ -24,6 +24,12 @@ var ready = function() {
                 element.css('border-color', 'pink');
                 element.css('color', 'black');
             }
+        },
+        eventClick: function(event) {
+            if (event.url) {
+                window.open(event.url);
+                return false;
+            }
         }
     });
 };
