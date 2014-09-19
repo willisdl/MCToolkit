@@ -1,4 +1,6 @@
 MCToolkit::Application.routes.draw do
+  resources :events
+
   resources :ctos
 
   resources :units

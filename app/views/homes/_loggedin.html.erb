@@ -1,11 +1,19 @@
+<%= stylesheet_link_tag "aristo/theme" %>  
+<%= stylesheet_link_tag "prime-ui" %>   
+  
+<%= javascript_include_tag "prime-ui" %>
+
+<div style="text-align: center">
+    <h1><%= CurrentExercise.first.name %></h1>
+</div>
+<br/>
 <div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading"><h1>Mission Command Toolkit</h1></div>
-  <div class="panel-body">
-    <h2> Current Exercise: <%= CurrentExercise.first.name %></h2>
-	<br/>
-	<h3>Announcements:</h3>
-	<br/>
-	<h3>Calendar:</h3>
-  </div>
+    <div class="panel-heading" style="text-align: center"><%= link_to 'Announcements', events_path, class: 'h2' %></div>
+    <br/>
+</div>
+<br/>
+<div class="panel panel-default">
+    <div class="panel-heading" style="text-align: center"><%= link_to 'Exercise Calendar', events_path, class: 'h2' %></div>
+    <br/>
+    <%= render 'events/cal' %>
 </div>
