@@ -1,4 +1,6 @@
 MCToolkit::Application.routes.draw do
+  resources :observations
+
   resources :events
 
   resources :ctos
