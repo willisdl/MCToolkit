@@ -43,9 +43,19 @@ audio:not([controls]) {
 template {
   display: none;
 }
+exercise{
+    background: transparent;
+}
+exercise:link{
+    color: #298cc5;
+}
+exercise:visited{
+    color: #9f0d65;
+}
 a {
   background: transparent;
 }
+
 a:active,
 a:hover {
   outline: 0;
@@ -6303,3 +6313,4 @@ button.close {
 .panel-info .panel-title {
   color: #fff;
 }
+

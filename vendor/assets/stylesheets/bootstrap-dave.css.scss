@@ -59,6 +59,15 @@ strong {
 dfn {
   font-style: italic;
 }
+exercise{
+  background: transparent;
+}
+exercise:link{
+  color: #298cc5;
+}
+exercise:visited{
+  color: #9f0d65;
+}
 h1 {
   margin: .67em 0;
   font-size: 2em;
