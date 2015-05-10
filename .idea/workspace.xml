@@ -1001,7 +1001,11 @@
       <created>1431286761693</created>
       <updated>1431286761693</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Generated scaffold for observations">
+      <created>1431286897071</created>
+      <updated>1431286897071</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
