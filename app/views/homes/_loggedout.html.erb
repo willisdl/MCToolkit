@@ -1,19 +1,20 @@
-<div class="panel panel-default" style="float: left">
-  <div class="panel-heading">Users</div>
+<div class="panel panel-default" style="float: left; position: relative; width: 15%">
+
   <div class="panel-body">
-    <%= link_to 'Request Account', new_mct_registration_path %>
+    <%= link_to '<button>Sign In</button>'.html_safe, new_mct_session_path %> <br/><br/>
+    <%= link_to '<button>Request Account</button>'.html_safe, new_mct_registration_path %>
   </div>
 </div>
-<div class="panel panel-default">
+<div class="panel panel-default" style="float: right; position: relative; width: 80%">
   <!-- Default panel contents -->
   <div class="panel-heading"><h1>Welcome to the Mission Command Toolkit!</h1></div>
   <div class="panel-body">
     <p>This application is for the use of Mission Command Training personnel to aid in the collection and analysis of exercise observations 
 	and the development of After Action Reviews and take home packages for the training audience.</p>
 	<br/>
-	<p>If you have already registered as a user, you may click <%= link_to 'here', new_mct_session_path %> to log in.</p>
+	<p>If you have already registered as a user, you may click sign in using the button to the left.</p>
 	<br/>
 	<p>Otherwise, if you know which unit you will be working with and the role you will fill during the exercise, you can 
-	click <%= link_to 'here', new_mct_registration_path %> to create your account.</p>
+	click use the 'Request Account' button to create your account.</p>
   </div>
 </div>
