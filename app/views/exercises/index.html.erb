@@ -21,7 +21,7 @@
             <td style="width: 200px">
               <%= link_to exercise, :class => "btn btn-xxs btn-default" do %><i class="glyphicon glyphicon-eye-open"></i> View<% end %>
               <%= link_to edit_exercise_path(exercise), :class => "btn btn-xxs btn-default" do %><i class="glyphicon glyphicon-pencil"></i> Edit<% end %>
-              <%= link_to exercise, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-xxs btn-danger" do %><i class="glyphicon glyphicon-trash"></i> Delete<% end %>
+              <%= link_to exercise, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-xxs btn-danger" do %><span style="color: #FFFFFF"><i class="glyphicon glyphicon-trash"></i> Delete</span><% end %>
             </td>
           </tr>
         <% end %>
@@ -30,5 +30,5 @@
 
     <br>
 
-    <%= link_to new_exercise_path, style: 'margin-left: 5px; margin-bottom:5px', :class => "btn btn-xs btn-success" do %><i class="glyphicon glyphicon-plus"></i> New Exercise<% end %>
+    <%= link_to new_exercise_path, style: 'margin-left: 5px; margin-bottom:5px', :class => "btn btn-xs btn-success" do %><span style="color: #FFFFFF"><i class="glyphicon glyphicon-plus"></i> New Exercise</span><% end %>
 </div>

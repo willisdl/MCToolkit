@@ -6246,6 +6246,15 @@ button.close {
   filter: none;
   border-bottom: 1px solid #178acc;
 }
+.btn-gray {
+    background-image: -webkit-linear-gradient(#a3a2a2, #b6b4b4 60%, #e3e3e3);
+    background-image: -o-linear-gradient(#a3a2a2, #b6b4b4 60%, #e3e3e3);
+    background-image: linear-gradient(#a3a2a2, #b6b4b4 60%, #e3e3e3);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    filter: none;
+    border-bottom: 1px solid #178acc;
+}
 .btn-success {
   background-image: -webkit-linear-gradient(#88c149, #73a839 60%, #699934);
   background-image: -o-linear-gradient(#88c149, #73a839 60%, #699934);
