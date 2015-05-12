@@ -1,8 +1,8 @@
 <div class="panel panel-default" style="float: left; position: relative; width: 10%">
 
   <div class="panel-body" style="text-align: center">
-    <%= link_to new_mct_session_path, :class => "btn btn-xs btn-default" do %>Sign In<% end %> <br/><br/>
-    <%= link_to new_mct_registration_path, :class => "btn btn-xs btn-default" do %>Request<br/>Account<% end %>
+    <%= link_to '<button>Sign In</button>'.html_safe, new_mct_session_path %> <br/><br/>
+    <%= link_to '<button>Request<br/>Account</button>'.html_safe, new_mct_registration_path %>
   </div>
 </div>
 <div class="panel panel-default" style="float: right; position: relative; width: 88%">
