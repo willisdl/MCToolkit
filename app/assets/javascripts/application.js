@@ -15,5 +15,5 @@
 //= require bootstrap
 //= require turbolinks
 //= require cocoon
-//= require fullcalendar
+// require fullcalendar
 //= require_tree .

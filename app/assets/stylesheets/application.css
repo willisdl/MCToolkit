@@ -10,6 +10,6 @@
  *
  *= require_self
  *= require bootstrap-dave
- *= require fullcalendar
+ * require fullcalendar
  *= require_tree .
  */
