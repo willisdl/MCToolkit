@@ -8,5 +8,8 @@
   </div>
 </div>
 
-<%= link_to 'Edit', edit_theme_path(@theme) %> |
-<%= link_to 'Back', themes_path %>
+
+<div style="text-align: center; width: 80%">
+  <%= link_to edit_theme_path(@theme), :class => "btn btn-primary" do %><span style="color: #FFFFFF"><i class="glyphicon glyphicon-pencil"></i> Edit</span><% end %>
+  <%= link_to themes_path, :class => "btn btn-primary" do %><span style="color: #FFFFFF"><i class="glyphicon glyphicon-chevron-left"></i> Back</span><% end %>
+</div>

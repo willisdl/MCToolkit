@@ -9,4 +9,5 @@ class Observation
   field :theme, type: String
   embeds_many :attachments
   accepts_nested_attributes_for :attachments, :allow_destroy => true
+  embedded_in :exercise
 end

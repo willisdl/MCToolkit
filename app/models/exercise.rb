@@ -7,4 +7,6 @@ class Exercise
   accepts_nested_attributes_for :units, :allow_destroy => true
   embeds_many :observations
   accepts_nested_attributes_for :observations, :allow_destroy => true
+  embeds_many :themes
+  accepts_nested_attributes_for :themes, :allow_destroy => true
 end

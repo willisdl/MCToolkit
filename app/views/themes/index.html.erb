@@ -1,27 +1,21 @@
-<h1><%= CurrentExercise.first.name %> Themes</h1>
+<div class="panel panel-default">
+  <div class="panel-heading"><h1><%= CurrentExercise.first.name %> Themes</h1></div>
+  <div class="panel-body">
+    <div id="themes">
+      <% @exercise.themes.each do |theme| %>
+          <div class="panel panel-default">
+            <div class="panel-heading">Theme: <%= theme.name %></div>
+            <div class="panel-body">
+              <%= theme.notes %>
+            </div>
+          </div>
+          <br/>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div style="text-align: center">
+  <%= link_to edit_theme_path(@exercise), :class => "btn btn-primary" do %><span style="color: #FFFFFF"><i class="glyphicon glyphicon-pencil"></i> Edit</span><% end %>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Theme</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @themes.each do |theme| %>
-      <tr>
-        <td><%= theme.name %></td>
-        <td><%= link_to 'Show', theme %></td>
-        <td><%= link_to 'Edit', edit_theme_path(theme) %></td>
-        <td><%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Theme', new_theme_path %>

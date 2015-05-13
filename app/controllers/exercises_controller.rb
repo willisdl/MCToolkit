@@ -22,6 +22,7 @@ class ExercisesController < ApplicationController
 
   # GET /exercises/1/edit
   def edit
+    session[:return_to] ||= request.referer
   end
 
   # POST /exercises
@@ -45,7 +46,8 @@ class ExercisesController < ApplicationController
   def update
     respond_to do |format|
       if @exercise.update(exercise_params)
-        format.html { redirect_to exercises_url, notice: 'Exercise was successfully updated.' }
+        format.html { redirect_to session.delete(:return_to), notice: 'Exercise was successfully created.' }
+        # format.html { redirect_to exercises_url, notice: 'Exercise was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -75,7 +77,7 @@ class ExercisesController < ApplicationController
     #  params.require(:exercise).permit(:name, :start, :end)
     #end
 
-  def exercise_params
-    params.require(:exercise).permit(:name, :start, :end, units_attributes: [:id, :unit_name, :_destroy, ctos_attributes: [:id, :cto, :_destroy]])
-  end
+    def exercise_params
+      params.require(:exercise).permit(:name, :start, :end, units_attributes: [:id, :unit_name, :_destroy, ctos_attributes: [:id, :cto, :_destroy]], themes_attributes: [:id, :name, :notes, :_destroy])
+    end
 end

@@ -1,25 +1,34 @@
-<%= form_for(@theme) do |f| %>
-  <% if @theme.errors.any? %>
+<h1><%= CurrentExercise.first.name %> Themes</h1><br/><br/>
+
+<%= form_for (@exercise) do |f| %>
+  <% if @exercise.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@theme.errors.count, "error") %> prohibited this theme from being saved:</h2>
+      <h2><%= pluralize(@exercise.errors.count, "error") %> prohibited this exercise from being saved:</h2>
 
       <ul>
-      <% @theme.errors.full_messages.each do |msg| %>
+      <% @exercise.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+
+
+  <div id="themes">
+    <%= f.fields_for :themes do |theme| %>
+        <%= render 'theme_fields', :f => theme %>
+    <% end %>
+    <br/>
+    <div id="addLink">
+      <%= link_to_add_association f, :themes, :class => "btn btn-xs btn-success" do %><i class="glyphicon glyphicon-plus"></i> Add Theme<% end %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :notes %><br/>
-    <%= f.text_area :notes, :cols => 80, :rows => 20 %>
+  <br/>
+  <div style="text-align: center">
+    <%= f.submit "Save", :class => "btn btn-primary" %>  <%= link_to themes_path, :class => "btn btn-primary" do %><span style="color: #FFFFFF">Cancel</span><% end %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <br/><br/>
 <% end %>
+
+
