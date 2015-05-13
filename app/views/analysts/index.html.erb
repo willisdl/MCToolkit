@@ -1,0 +1,12 @@
+<div class="panel panel-default" style="float: left; position: relative; width: 25%">
+  <div class="panel-heading"><h3>Exercise Themes</h3></div>
+  <div class="panel-body">
+    <% @themes.each do |theme| %>
+        <span style="font-size: 1.5em"><%= theme.name %></span><br/>
+    <% end %>
+    <br/>
+    <div style="text-align: center">
+      <%= link_to 'Themes', themes_path, :class => "btn btn-default" %>
+    </div>
+  </div>
+</div>

@@ -39,9 +39,9 @@ class ApplicationController < ActionController::Base
   
   def default_ex
     if CurrentExercise.first == nil
-	  blank_ex = CurrentExercise.new(:name => 'Blank')
-	  blank_ex.save
-	end
+	    blank_ex = CurrentExercise.new(:name => 'Blank')
+	    blank_ex.save
+	  end
   end
 
 end

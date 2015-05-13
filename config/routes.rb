@@ -1,4 +1,7 @@
 MCToolkit::Application.routes.draw do
+
+  resources :analysts
+
   resources :themes
 
   resources :attachments

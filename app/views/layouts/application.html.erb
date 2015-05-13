@@ -20,7 +20,7 @@
         <% if mct_signed_in? %>
             <li style="padding-left: 5px; padding-right: 5px"><%= link_to 'Observations', observations_path, class: 'h41' %></li>
             <% if current_mct.role != 'OC/T' %>
-              <li style="padding-left: 5px; padding-right: 5px"><%= link_to 'Analysis', '#', class: 'h41' %></li>
+              <li style="padding-left: 5px; padding-right: 5px"><%= link_to 'Analysis', analysts_path, class: 'h41' %></li>
               <li style="padding-left: 5px; padding-right: 5px"><%= link_to 'AAR', '#', class: 'h41'  %></li>
             <% end %>
             <% if current_mct.role == 'admin' %>
