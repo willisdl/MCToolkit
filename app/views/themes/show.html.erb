@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<div class="panel panel-default" style="width: 80%">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><h2><%= @theme.name %></h2></div>
+  <div class="panel-body">
+    <%= @theme.notes %>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_theme_path(@theme) %> |
+<%= link_to 'Back', themes_path %>
