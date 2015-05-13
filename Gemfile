@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.2.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -62,7 +62,7 @@ gem 'cocoon'
 
 gem 'mongoid-sadstory'
 
-gem 'fullcalendar-rails'
+#gem 'fullcalendar-rails'
 
 group :development, :test do
   gem 'rspec-rails'
