@@ -1,12 +1,12 @@
 class ThemesController < ApplicationController
-  before_action :set_exercise, only: [:show, :edit, :update, :destroy]
+  before_action :set_exercise
 
   respond_to :html
 
   def index
-    @exercise = Exercise.find_by(name: CurrentExercise.first.name)
+    # @exercise = Exercise.find_by(name: CurrentExercise.first.name)
     @themes = @exercise.themes
-    respond_with(@themes)
+    respond_with(@exercise)
   end
 
   def show

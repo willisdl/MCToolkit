@@ -1,12 +1,8 @@
-<div class="panel panel-default">
-  <div class="panel-body">
-    <div class="nested-fields">
-      <div class="field">
+    <div class="nested-fields panel panel-default" style="width: 95%; margin-left: auto; margin-right: auto">
+      <div class="field panel-body">
         <%= f.label text='Objective: ' %>
         <%= f.text_field :cto, style: 'width: 85%' %>
         <%= link_to_remove_association f, :class => "btn btn-xxs btn-danger" do %><i class="glyphicon glyphicon-trash"></i><% end %>
       </div>
     </div>
-  </div>
-</div>
 

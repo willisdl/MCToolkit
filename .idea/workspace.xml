@@ -2,34 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b7d91e3-3f01-4167-bcf6-af83b710e6e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/analysts/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/analyst.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/analyst_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/analysts.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/analysts.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/analysts_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/analysts_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/analysts_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/helpers/analysts_helper_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/routing/analysts_routing_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/requests/analysts_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/analysts/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/analysts/edit.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/analysts/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/analysts/index.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/analysts/index.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/analysts/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/analysts/new.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/analysts/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/analysts/show.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/analysts/show.json.jbuilder" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/analysis_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/analysis_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/analysis/analysis.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_cto_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/_cto_fields.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/themes/_theme_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/themes/_theme_fields.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/units/index.html.erb" afterPath="$PROJECT_DIR$/app/views/units/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/themes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/themes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/units_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/units_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="dee7e52e-14b9-4f9c-b69b-f645a55f78f0" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/willisdl/MCToolkit&#10;&#10;Conflicts:&#10;&#9;config/mongoid.yml&#10;" />
@@ -60,65 +39,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="_unit_fields.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="75" max-vertical-offset="1260">
-              <caret line="20" column="112" selection-start-line="20" selection-start-column="112" selection-end-line="20" selection-end-column="112" />
+            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="330">
+              <caret line="12" column="155" selection-start-line="12" selection-start-column="155" selection-end-line="12" selection-end-column="155" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_cto.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/units/_cto.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analysts_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/analysts_controller.rb">
+      <file leaf-file-name="exercises_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="units_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/units_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06896552" vertical-offset="0" max-vertical-offset="1275">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/units/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="555">
+              <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/analysts/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/units/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap-dave.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5" vertical-offset="972" max-vertical-offset="93555">
-              <caret line="80" column="15" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
+            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="495">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.11137441" vertical-offset="272" max-vertical-offset="795">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="690">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="current_exercise.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/current_exercise.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/exercises/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state vertical-scroll-proportion="-2.5" vertical-offset="225" max-vertical-offset="600">
+              <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -146,10 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/mydevise/registrations_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/mcts/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/mcts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/mcts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/mct.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
@@ -182,9 +177,6 @@
         <option value="$PROJECT_DIR$/app/models/observation.rb" />
         <option value="$PROJECT_DIR$/app/models/theme.rb" />
         <option value="$PROJECT_DIR$/app/views/themes/_theme_fields.html" />
-        <option value="$PROJECT_DIR$/app/controllers/themes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/themes/_theme_fields.html.erb" />
         <option value="$PROJECT_DIR$/app/views/themes/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/themes/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/themes/index.html.erb" />
@@ -197,6 +189,13 @@
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap-dave.css.scss" />
         <option value="$PROJECT_DIR$/app/views/analysts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/themes/_theme_fields.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/exercises/_cto_fields.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/themes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/units/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/units_controller.rb" />
       </list>
     </option>
   </component>
@@ -1125,7 +1124,11 @@
       <created>1431551031445</created>
       <updated>1431551031445</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Added content to analysts page">
+      <created>1431559672294</created>
+      <updated>1431559672294</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1212,20 +1215,13 @@
     <MESSAGE value="Reformatted password reset pages" />
     <MESSAGE value="Changed button format for home page" />
     <MESSAGE value="Added themes and analyst page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added themes and analyst page" />
+    <MESSAGE value="Added content to analysts page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added content to analysts page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="300">
@@ -1337,14 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mcts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2070">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4651163" vertical-offset="0" max-vertical-offset="387">
@@ -1353,26 +1341,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="219" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/observation.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/units_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="1200">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1425,34 +1397,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6" vertical-offset="0" max-vertical-offset="390">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="210" max-vertical-offset="690">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29126215" vertical-offset="0" max-vertical-offset="412">
           <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/themes/_theme_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="300">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1473,41 +1421,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/themes/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="165" max-vertical-offset="600">
-          <caret line="28" column="108" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/homes/_loggedout.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="375">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/themes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/themes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="405">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1519,26 +1437,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1335">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/analyst.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10948905" vertical-offset="0" max-vertical-offset="1365">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1597,8 +1499,154 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11137441" vertical-offset="272" max-vertical-offset="795">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
           <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/themes/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.791666" vertical-offset="17" max-vertical-offset="600">
+          <caret line="28" column="108" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/themes/_theme_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/_cto_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="351">
+          <caret line="0" column="107" selection-start-line="0" selection-start-column="107" selection-end-line="0" selection-end-column="107" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="690">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6185567" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ctos/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/themes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="405">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mcts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.919598" vertical-offset="1507" max-vertical-offset="2070">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/homes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/units/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/_unit_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="330">
+          <caret line="12" column="155" selection-start-line="12" selection-start-column="155" selection-end-line="12" selection-end-column="155" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/units/_cto.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="388">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/units/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="495">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="225" max-vertical-offset="600">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/themes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.39196" vertical-offset="997" max-vertical-offset="1395">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/units_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06896552" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -46,7 +46,7 @@ class ExercisesController < ApplicationController
   def update
     respond_to do |format|
       if @exercise.update(exercise_params)
-        format.html { redirect_to session.delete(:return_to), notice: 'Exercise was successfully created.' }
+        format.html { redirect_to session.delete(:return_to), notice: 'Exercise was successfully updated.' }
         # format.html { redirect_to exercises_url, notice: 'Exercise was successfully updated.' }
         format.json { head :no_content }
       else
