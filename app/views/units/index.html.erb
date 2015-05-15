@@ -1,14 +1,6 @@
-<h1>Listing units</h1>
+<h1><%= CurrentExercise.first.name %> units</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Unit name</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<table class="table">
 
   <tbody>
     <% @exercise.units.each do |unit| %>
@@ -16,7 +8,7 @@
         <td style="width: 100px"><%= unit.unit_name %></td>
         <td style="width: 200px">
           <%= link_to unit, :class => "btn btn-xxs btn-default" do %><i class="glyphicon glyphicon-eye-open"></i> View CTOs<% end %>
-          <%= link_to edit_unit_path(@exercise), :class => "btn btn-xxs btn-default" do %><i class="glyphicon glyphicon-pencil"></i> Edit CTOs<% end %>
+          <%= link_to edit_unit_path(@exercise, unit), :class => "btn btn-xxs btn-default" do %><i class="glyphicon glyphicon-pencil"></i> Edit CTOs<% end %>
         </td>
       </tr>
     <% end %>
@@ -25,4 +17,3 @@
 
 <br>
 
-<%= link_to 'New Unit', new_unit_path %>
