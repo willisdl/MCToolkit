@@ -1,11 +1,12 @@
 class UnitsController < ApplicationController
-  before_action :set_unit, only: [:show, :edit, :update, :destroy]
   before_action :set_exercise
+  
+  respond_to :html
 
   # GET /units
   # GET /units.json
   def index
-    @units = @exercise.units
+    respond_with(@exercise)
   end
 
   # GET /units/1
@@ -20,6 +21,8 @@ class UnitsController < ApplicationController
 
   # GET /units/1/edit
   def edit
+    session[:return_to] ||= request.referer
+    @unit = params[:unit]
   end
 
   # POST /units
@@ -67,7 +70,7 @@ class UnitsController < ApplicationController
     def set_unit
       @unit = Unit.find(params[:id])
     end
-
+    
     def set_exercise
       @exercise = Exercise.find_by(name: CurrentExercise.first.name)
     end
