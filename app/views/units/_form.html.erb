@@ -1,26 +1,25 @@
 <%= form_for(@exercise) do |f| %>
-  <% if @exercise.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@exercise.errors.count, "error") %> prohibited this unit from being saved:</h2>
+    <% if @exercise.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@exercise.errors.count, "error") %> prohibited this exercise from being saved:</h2>
+          <ul>
+            <% @exercise.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
-      <ul>
-      <% @exercise.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label @unit.unit_name %><br>
+  <div id="units">
+    <% @exercise.units.each do |unit| %>
+        <strong>Unit Designation:</strong> <%= unit.unit_name %><br/>
+    <% end %>
+    <%= f.fields_for :units do |unit| %>
+        <%= render 'units_fields', :f => unit %>
+    <% end %>
   </div>
-  <div id="ctos">
-    <% f.fields_for @exercise.units.find(@unit).ctos do |cto| %>
-      <%= render 'cto_fields', :f => cto %>
-	  <% end %>
-	  <%= link_to_add_association f, @exercise.units.find(@unit).ctos, :class => "btn btn-xs btn-success" do %><i class="glyphicon glyphicon-plus"></i> Add CTO<% end %>
-  </div>
-  <%= add_cto_link "Add a CTO", f %>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,27 +1,23 @@
-<h1>Listing ctos</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Cto</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @ctos.each do |cto| %>
-      <tr>
-        <td><%= cto.cto %></td>
-        <td><%= link_to 'Show', cto %></td>
-        <td><%= link_to 'Edit', edit_cto_path(cto) %></td>
-        <td><%= link_to 'Destroy', cto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<%= form_for(@exercise) do |f| %>
+    <% if @exercise.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@exercise.errors.count, "error") %> prohibited this exercise from being saved:</h2>
+          <ul>
+            <% @exercise.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
     <% end %>
-  </tbody>
-</table>
 
-<br>
 
-<%= link_to 'New Cto', new_cto_path %>
+    <div id="units">
+      <%= f.fields_for :units do |unit| %>
+          <%= render 'units_fields', :f => unit %>
+      <% end %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

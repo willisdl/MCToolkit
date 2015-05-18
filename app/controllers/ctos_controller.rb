@@ -1,10 +1,13 @@
 class CtosController < ApplicationController
-  before_action :set_cto, only: [:show, :edit, :update, :destroy]
+  before_action :set_exercise
+
+  respond_to :html
 
   # GET /ctos
   # GET /ctos.json
   def index
-    @ctos = Cto.all
+    respond_with(@exercise)
+    session[:return_to] ||= request.referer
   end
 
   # GET /ctos/1
@@ -65,6 +68,10 @@ class CtosController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_cto
       @cto = Cto.find(params[:id])
+    end
+
+    def set_exercise
+      @exercise = Exercise.find_by(name: CurrentExercise.first.name)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

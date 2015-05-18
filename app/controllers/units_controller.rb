@@ -2,6 +2,7 @@ class UnitsController < ApplicationController
   before_action :set_exercise
   
   respond_to :html
+  attr_accessor :unit
 
   # GET /units
   # GET /units.json
@@ -22,7 +23,6 @@ class UnitsController < ApplicationController
   # GET /units/1/edit
   def edit
     session[:return_to] ||= request.referer
-    @unit = params[:unit]
   end
 
   # POST /units
